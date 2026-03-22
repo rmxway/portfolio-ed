@@ -1,0 +1,118 @@
+import type { Project } from "./types";
+
+export const projects: Project[] = [
+  {
+    id: "green-shop",
+    title: "Green Shop",
+    subtitle: "Интернет-магазин натуральной продукции",
+    description:
+      "Каталог с поиском и фильтрами, корзина, избранное, сравнение товаров, NextAuth, личный кабинет, заказы в Firestore, тёмная тема, Storybook и тесты.",
+    stack: [
+      "Next.js 16",
+      "React 19",
+      "Redux Toolkit",
+      "RTK Query",
+      "Firebase",
+      "NextAuth",
+      "Storybook",
+      "Jest",
+    ],
+    kind: "pet",
+    githubUrl: "https://github.com/rmxway/green-shop",
+    demoUrl: "https://green-shop-brand.vercel.app/",
+    accent: "#16a34a",
+  },
+  {
+    id: "react-todos",
+    title: "React Todos",
+    subtitle: "Заметки и задачи на FSD",
+    description:
+      "FSD-архитектура на Next.js: CRUD заметок, фильтры, сортировка, оптимистичные обновления React Query, NextAuth и Firestore.",
+    stack: [
+      "Next.js 14",
+      "TypeScript",
+      "FSD",
+      "Redux Toolkit",
+      "TanStack Query",
+      "NextAuth",
+      "Vitest",
+      "Framer Motion",
+    ],
+    kind: "pet",
+    githubUrl: "https://github.com/rmxway/react-todos",
+    demoUrl: "https://react-todos-service.vercel.app",
+    accent: "#6366f1",
+  },
+  {
+    id: "itguru-test",
+    title: "Products Table",
+    subtitle: "Тестовое задание",
+    description:
+      "Авторизация DummyJSON, таблица товаров с пагинацией, поиск, сортировка, оптимистичное добавление в кэш React Query.",
+    stack: [
+      "React 19",
+      "Vite 7",
+      "TanStack Query",
+      "axios",
+      "React Hook Form",
+      "Yup",
+    ],
+    kind: "pet",
+    githubUrl: "https://github.com/rmxway/itguru-test",
+    demoUrl: "https://rmxway.github.io/itguru-test/",
+    accent: "#0ea5e9",
+  },
+  {
+    id: "sokolinayaohota",
+    title: "Соколиная охота",
+    subtitle: "Сайт ресторана",
+    description:
+      "Публичный сайт на Next.js: слайдеры Swiper, анимации Framer Motion, Storybook, Jest, Docker и деплой на Vercel.",
+    stack: [
+      "Next.js 16",
+      "React 19",
+      "styled-components",
+      "Framer Motion",
+      "Storybook",
+      "Docker",
+    ],
+    kind: "pet",
+    githubUrl: "https://github.com/rmxway/sokolinayaohota",
+    demoUrl: "https://sokolinayaohota.vercel.app/",
+    accent: "#b45309",
+  },
+  {
+    id: "medanketa",
+    title: "Medanketa",
+    subtitle: "Медицинские анкеты и аналитика",
+    description:
+      "Список и прохождение анкет, статистика, шаблоны и справочники. Интеграция API, оптимизация загрузки и рефакторинг.",
+    stack: ["React", "TypeScript", "Vite", "Redux Toolkit", "TanStack Query"],
+    kind: "freelance",
+    githubUrl: "https://github.com/rmxway/medanketa",
+    demoUrl: "https://medanketa.com/",
+    accent: "#0284c7",
+  },
+  {
+    id: "askona",
+    title: "Askona",
+    subtitle: "Аскона Тех — e-commerce",
+    description:
+      "Каталог, фильтры, карточка товара, подборщики, UI Kit, менторинг фронтенда, Agile/Scrum и ускорение загрузки страниц.",
+    stack: ["React", "TypeScript", "UI Kit", "Адаптивная вёрстка"],
+    kind: "commercial",
+    demoUrl: "https://www.askona.ru/",
+    accent: "#7c3aed",
+  },
+  {
+    id: "zoloto585",
+    title: "585 Золотой",
+    subtitle: "Холдинг 585 — ювелирный ритейл",
+    description:
+      "От вёрстки до React: формы с валидацией, каталоги, карточки товаров, рефакторинг и оптимизация скорости загрузки.",
+    stack: ["React", "Webpack", "SCSS", "Формы и валидация"],
+    kind: "commercial",
+    demoUrl: "https://zoloto585.ru/",
+    accent: "#ca8a04",
+  },
+];
