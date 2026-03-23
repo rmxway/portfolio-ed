@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { media } from "@/theme/media";
+import { motion } from "framer-motion";
 
 export const HeroRoot = styled.header`
   ${({ theme }) => css`
@@ -18,7 +19,7 @@ export const HeroRoot = styled.header`
   `}
 `;
 
-export const HeroInner = styled.div`
+export const HeroInner = styled(motion.div)`
   ${({ theme }) => css`
     position: relative;
     z-index: 1;
@@ -28,7 +29,7 @@ export const HeroInner = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: ${theme.space[4]};
+    gap: ${theme.space[6]};
   `}
 `;
 

@@ -21,7 +21,7 @@ export function ProjectsSection() {
           </ProjectsIntro>
         </Section>
       </Container>
-      {projects.map((project) => (
+      {projects.map((project, index) => (
         <ProjectSlide
           key={project.id}
           aria-labelledby={`project-${project.id}-title`}
@@ -30,6 +30,7 @@ export function ProjectsSection() {
             <ProjectCard
               project={project}
               headingId={`project-${project.id}-title`}
+              reversed={index % 2 === 1}
               preview={
                 <ProjectPreview accent={project.accent} title={project.title} />
               }

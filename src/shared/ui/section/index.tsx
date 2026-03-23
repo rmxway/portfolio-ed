@@ -1,13 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
-import styled from "styled-components";
 import { fadeInUp } from "@/shared/lib/animations";
-
-const MotionSection = styled(motion.section)`
-  position: relative;
-  width: 100%;
-`;
+import { MotionSection } from "./styled";
 
 type SectionProps = {
   children: React.ReactNode;

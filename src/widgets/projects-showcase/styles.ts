@@ -28,6 +28,11 @@ export const ProjectSlide = styled.div`
     align-items: center;
     padding: ${theme.space[6]} 0;
     border-bottom: 1px solid ${theme.colors.glassBorder};
+    background: ${theme.colors.gray50};
+
+    &:nth-of-type(even) {
+      background: ${theme.colors.gray100};
+    }
 
     &:last-of-type {
       border-bottom: none;

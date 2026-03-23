@@ -1,5 +1,6 @@
 "use client";
 
+import "@/shared/lib/fontawesome";
 import { type PropsWithChildren } from "react";
 import { ThemeProvider } from "styled-components";
 import { appTheme, GlobalStyle } from "@/theme";

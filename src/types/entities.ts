@@ -11,3 +11,19 @@ export type Project = {
   demoUrl?: string;
   accent: string;
 };
+
+export type SkillCategory = {
+  id: string;
+  title: string;
+  items: string[];
+};
+
+export type ExperienceItem = {
+  id: string;
+  period: string;
+  company: string;
+  role: string;
+  location?: string;
+  description: string;
+  highlights: string[];
+};

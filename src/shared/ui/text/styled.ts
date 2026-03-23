@@ -27,14 +27,14 @@ export const Heading2 = styled.h2`
 
 export const Heading3 = styled.h3`
   ${({ theme }) => css`
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: -0.02em;
     line-height: 1.15;
     color: ${theme.colors.text};
 
     ${media.greaterThan("md")`
-      font-size: 1.75rem;
+      font-size: 1.5rem;
     `}
   `}
 `;

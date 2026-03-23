@@ -1,5 +1,6 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import { AppProviders } from "@/shared/providers";
 
 const geistSans = Geist({
@@ -16,6 +17,13 @@ export const metadata: Metadata = {
   title: "Довгань Евгений — Frontend-разработчик",
   description:
     "Портфолио: React, TypeScript, Next.js. Проекты Green Shop, React Todos, Medanketa, Askona и другие.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({

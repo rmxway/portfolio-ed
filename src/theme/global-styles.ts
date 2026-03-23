@@ -10,15 +10,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    height: 100%;
     scroll-behavior: smooth;
     scroll-snap-type: y proximity;
   }
 
   body {
     min-height: 100%;
-    max-width: 100vw;
-    overflow-x: hidden;
+    min-width: 400px;
     font-family: ${({ theme }) => theme.fonts.body};
     font-size: 16px;
     line-height: 1.5;

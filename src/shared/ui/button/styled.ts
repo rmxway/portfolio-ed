@@ -3,9 +3,9 @@
 import Link from "next/link";
 import styled, { css } from "styled-components";
 
-type ButtonVariant = "primary" | "secondary" | "ghost";
+export type ButtonVariant = "primary" | "secondary" | "ghost";
 
-const buttonBase = css<{ $variant: ButtonVariant }>`
+export const buttonBase = css<{ $variant: ButtonVariant }>`
   ${({ theme, $variant }) => css`
     display: inline-flex;
     align-items: center;
@@ -69,68 +69,10 @@ const buttonBase = css<{ $variant: ButtonVariant }>`
   `}
 `;
 
-const StyledButton = styled.button<{ $variant: ButtonVariant }>`
+export const StyledButton = styled.button<{ $variant: ButtonVariant }>`
   ${buttonBase}
 `;
 
-const StyledLink = styled(Link)<{ $variant: ButtonVariant }>`
+export const StyledLink = styled(Link)<{ $variant: ButtonVariant }>`
   ${buttonBase}
 `;
-
-type BaseProps = {
-  children: React.ReactNode;
-  className?: string;
-  variant?: ButtonVariant;
-};
-
-type ButtonAsButton = BaseProps &
-  React.ButtonHTMLAttributes<HTMLButtonElement> & {
-    href?: undefined;
-  };
-
-type ButtonAsLink = BaseProps & {
-  href: string;
-  target?: string;
-  rel?: string;
-};
-
-export type ButtonProps = ButtonAsButton | ButtonAsLink;
-
-export function Button(props: ButtonProps) {
-  const { children, className, variant = "primary" } = props;
-
-  if ("href" in props && props.href) {
-    const { href, target, rel } = props;
-    return (
-      <StyledLink
-        href={href}
-        target={target}
-        rel={rel}
-        className={className}
-        $variant={variant}
-      >
-        {children}
-      </StyledLink>
-    );
-  }
-
-  const {
-    type = "button",
-    disabled,
-    onClick,
-    ...rest
-  } = props as ButtonAsButton;
-
-  return (
-    <StyledButton
-      type={type}
-      disabled={disabled}
-      onClick={onClick}
-      className={className}
-      $variant={variant}
-      {...rest}
-    >
-      {children}
-    </StyledButton>
-  );
-}
