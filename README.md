@@ -13,7 +13,7 @@ src/
 ├── views/                        # композиция страниц (не путать с Pages Router)
 │   └── home/ui/home-page.tsx
 ├── widgets/                      # крупные секции лендинга
-│   ├── hero/                     # первый экран, фон
+│   ├── hero/                     # первый экран, фон и фото
 │   ├── footer/
 │   ├── projects-showcase/        # блок проектов
 │   ├── skills-section/           # обёртка над сеткой навыков
@@ -27,9 +27,9 @@ src/
 │   ├── project/
 │   └── skill/
 ├── shared/
-│   ├── lib/                      # animations.ts, fontawesome.ts
+│   ├── lib/                      # animations, accent-colors, fontawesome(+icons)
 │   ├── providers/                # styled-components, приложение
-│   └── ui/                       # button, container, section, text, fa-icon (+ styled.ts)
+│   └── ui/                       # button, container, section, text, fa-icon, gradient-background
 ├── theme/                        # tokens, breakpoints, media, global-styles
 └── types/                        # theme.ts, entities.ts, styled.d.ts
 ```
@@ -45,6 +45,7 @@ src/
 | Тема, брейкпоинты | [`src/theme`](src/theme) |
 | Типы сущностей | [`src/types/entities.ts`](src/types/entities.ts) |
 | Анимации | **Framer Motion** — `whileInView`, variants в [`src/shared/lib/animations.ts`](src/shared/lib/animations.ts) |
+| Цветовые акценты | [`ACCENT_COLORS`](src/shared/lib/accent-colors.ts) + ключи в данных сущностей |
 | Иконки | **Font Awesome** (React) |
 
 **Font Awesome — проводка**
@@ -54,6 +55,8 @@ src/
 - Обёртка: [`FaIcon`](src/shared/ui/fa-icon/index.tsx) — проп `size` как в FA (`"sm"`, `"lg"`, `"1x"` …), опционально `pixels` (px)
 
 Главная страница — портфолио: hero, полноэкранные блоки проектов со `scroll-snap`, навыки, опыт, контакты. Данные — в [`src/entities`](src/entities).
+
+Превью проектов поддерживают фоновый glow и опциональные изображения из [`public/img`](public/img) (например, для Askona и 585 Золотой).
 
 > В Next.js нельзя использовать папку `src/pages` вместе с корневым `app/` (зарезервировано под Pages Router), поэтому слой композиции страниц — **`src/views`**.
 
