@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     min-height: 100%;
-    min-width: 400px;
+    min-width: 320px;
     font-family: ${({ theme }) => theme.fonts.body};
     font-size: 16px;
     line-height: 1.5;

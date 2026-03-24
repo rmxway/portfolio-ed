@@ -21,6 +21,8 @@ export const ProjectSlide = styled.div`
   ${({ theme }) => css`
     min-height: 100vh;
     min-height: 100dvh;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
     display: flex;
     align-items: center;
     padding: ${theme.space[6]} 0;

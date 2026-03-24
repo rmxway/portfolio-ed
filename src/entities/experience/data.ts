@@ -34,7 +34,7 @@ export const experienceItems: ExperienceItem[] = [
     period: "Ноябрь 2020 — Август 2022",
     company: "Аскона Тех",
     role: "Frontend-разработчик",
-    location: "Ковров · askona.ru",
+    location: "Москва",
     description:
       "Развитие интернет-магазина: каталог, фильтры, карточки, подборщики, мобильная версия.",
     highlights: [
@@ -48,7 +48,7 @@ export const experienceItems: ExperienceItem[] = [
     period: "Ноябрь 2019 — Апрель 2020",
     company: "585, Холдинг",
     role: "Младший разработчик",
-    location: "Санкт-Петербург · zoloto585.ru",
+    location: "Москва",
     description:
       "Поддержка и развитие витрины под руководством senior-разработчика.",
     highlights: [
@@ -62,7 +62,7 @@ export const experienceItems: ExperienceItem[] = [
     period: "Ноябрь 2017 — Октябрь 2019",
     company: "585, Холдинг",
     role: "HTML-верстальщик",
-    location: "zoloto585.ru",
+    location: "Москва",
     description: "Вёрстка по макетам, переход к современному фронтенду.",
     highlights: [
       "PSD / Zeplin / Figma → HTML, LESS/SCSS, Pug, Webpack",
