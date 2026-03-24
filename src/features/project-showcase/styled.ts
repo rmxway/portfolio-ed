@@ -7,7 +7,7 @@ import { media } from "@/theme/media";
 export const ProjectCardRoot = styled(motion.article)<{ $reversed?: boolean }>`
   ${({ theme, $reversed }) => css`
     display: grid;
-    gap: ${theme.space[5]};
+    gap: ${theme.space[6]};
     align-items: center;
     grid-template-columns: 1fr;
 
@@ -56,9 +56,8 @@ export const Chip = styled.li`
     font-size: 0.8125rem;
     font-weight: 500;
     color: ${theme.colors.text};
-    background: ${theme.colors.background};
     border-radius: ${theme.radii.full};
-    border: 1px solid ${theme.colors.glassBorder};
+    border: 1px solid ${theme.colors.gray400};
   `}
 `;
 
@@ -81,11 +80,13 @@ export const KindLabel = styled.span`
   `}
 `;
 
-export const PreviewFrame = styled(motion.div)<{ $accent: string }>`
+export const PreviewFrame = styled(motion.a)<{ $accent: string }>`
   ${({ theme, $accent }) => css`
     position: relative;
-    width: min(100%, 420px);
-    aspect-ratio: 4 / 5;
+    width: 100%;
+    min-width: 300px;
+    aspect-ratio: 1;
+    height: 100%;
     border-radius: ${theme.radii.xl};
     overflow: hidden;
     background: ${theme.gradients.card};
@@ -102,35 +103,31 @@ export const PreviewFrame = styled(motion.div)<{ $accent: string }>`
       position: absolute;
       inset: 0;
       background: radial-gradient(
-        circle at 30% 20%,
-        ${$accent}33,
-        transparent 55%
+        circle at 50% 30%,
+        ${$accent},
+        transparent 95%
       );
       pointer-events: none;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      inset: 12%;
-      border-radius: ${theme.radii.lg};
-      border: 1px solid ${theme.colors.glassBorder};
-      background: ${theme.colors.glassBackground};
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
     }
   `}
 `;
 
-export const PreviewGlow = styled.div<{ $accent: string }>`
-  ${({ $accent }) => css`
+export const PreviewImage = styled.img`
+  ${({ theme }) => css`
     position: absolute;
-    inset: auto 10% 14%;
-    height: 38%;
-    border-radius: 50%;
-    filter: blur(48px);
-    background: ${$accent};
-    opacity: 0.35;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    border-radius: ${theme.radii.lg};
+    border: 1px solid ${theme.colors.glassBorder};
+    background: ${theme.colors.glassBackground};
+    margin: 20px;
+    object-fit: cover;
+    object-position: top left;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     pointer-events: none;
   `}
 `;

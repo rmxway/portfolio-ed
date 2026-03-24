@@ -44,6 +44,7 @@ export const Lead = styled.p`
     font-size: ${theme.typography.lead};
     line-height: 1.5;
     color: ${theme.colors.textMuted};
+    margin: 0 auto;
     max-width: 40rem;
   `}
 `;
@@ -56,14 +57,14 @@ export const Body = styled.p`
   `}
 `;
 
-export const Eyebrow = styled.span`
+export const Eyebrow = styled.div`
   ${({ theme }) => css`
     display: block;
-    font-size: 0.8125rem;
+    font-size: 0.85rem;
     font-weight: 600;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: ${theme.colors.accent};
+    color: ${theme.colors.gray600};
     margin-bottom: ${theme.space[2]};
   `}
 `;

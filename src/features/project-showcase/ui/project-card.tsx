@@ -1,8 +1,10 @@
 "use client";
 
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import type { Project } from "@/types/entities";
+import {
+  faArrowUpRightFromSquare,
+  faGithub,
+} from "@/shared/lib/fontawesome-icons";
+import type { Project, ProjectKind } from "@/types/entities";
 import { Button } from "@/shared/ui/button";
 import { FaIcon } from "@/shared/ui/fa-icon";
 import { Heading2, Heading3, Lead } from "@/shared/ui/text";
@@ -16,10 +18,11 @@ import {
   StackRow,
 } from "../styled";
 
-function kindRu(kind: Project["kind"]) {
+function kindRu(kind: ProjectKind) {
   if (kind === "pet") return "Pet-проект";
   if (kind === "freelance") return "Фриланс / продукт";
-  return "Коммерческий опыт";
+  if (kind === "test") return "Тестовое задание";
+  if (kind === "commercial") return "Коммерческий опыт";
 }
 
 type ProjectCardProps = {
@@ -50,6 +53,7 @@ export function ProjectCard({
         </Heading2>
         <Heading3 as="p">{project.subtitle}</Heading3>
         <Lead>{project.description}</Lead>
+        <span>{project.info}</span>
         <StackRow>
           {project.stack.map((item) => (
             <Chip key={item}>{item}</Chip>
@@ -63,7 +67,7 @@ export function ProjectCard({
               rel="noopener noreferrer"
             >
               <FaIcon icon={faArrowUpRightFromSquare} pixels={18} aria-hidden />
-              Открыть демо
+              Посмотреть
             </Button>
           ) : null}
           {project.githubUrl ? (

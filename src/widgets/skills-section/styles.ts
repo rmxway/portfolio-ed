@@ -3,6 +3,7 @@ import { media } from "@/theme/media";
 
 export const SkillsRoot = styled.section`
   ${({ theme }) => css`
+    position: relative;
     padding: ${theme.space[6]} 0;
     background: ${theme.colors.background};
   `}

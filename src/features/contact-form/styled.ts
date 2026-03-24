@@ -6,7 +6,6 @@ export const ContactLinkStyled = styled(Link)`
     display: inline-flex;
     align-items: center;
     min-height: 44px;
-    padding: 0 ${theme.space[3]};
     font-size: 1rem;
     font-weight: 500;
     color: ${theme.colors.accent};

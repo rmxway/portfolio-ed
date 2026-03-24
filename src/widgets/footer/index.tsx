@@ -1,6 +1,5 @@
 "use client";
 
-import { FaIcon } from "@/shared/ui/fa-icon";
 import {
   faArrowUp,
   faBriefcase,
@@ -9,12 +8,11 @@ import {
   faEnvelope,
   faLocationDot,
   faPhone,
-} from "@fortawesome/free-solid-svg-icons";
-import { faTelegram } from "@fortawesome/free-brands-svg-icons";
+  faTelegram,
+} from "@/shared/lib/fontawesome-icons";
+import { FaIcon } from "@/shared/ui/fa-icon";
 import { ContactLink } from "@/features/contact-form";
-import { Container } from "@/shared/ui/container";
-import { Heading2, Lead } from "@/shared/ui/text";
-import { Section } from "@/shared/ui/section";
+import { Container, Heading2, Lead, Section } from "@/shared/ui";
 import {
   ContactCard,
   ContactCardHeader,
@@ -26,7 +24,6 @@ import {
   FooterRoot,
   IntroBlock,
   LinkRow,
-  LocationCard,
   NavDivider,
   NavLinkInner,
 } from "./styles";
@@ -40,7 +37,7 @@ export function FooterSection() {
             <IntroBlock>
               <Heading2>Контакты</Heading2>
               <Lead>
-                Пишите на почту или в Telegram. 
+                Пишите на почту или в Telegram.
                 <br />
                 Телефон доступен до 21:00.
               </Lead>
@@ -71,7 +68,7 @@ export function FooterSection() {
                       Telegram
                     </ContactCardHeader>
                     <ContactCardValue>@evgenydovgan</ContactCardValue>
-                    <ContactCardHint>Быстрые вопросы и созвоны</ContactCardHint>
+                    <ContactCardHint>Быстрые вопросы, на связи</ContactCardHint>
                   </ContactLink>
                 </ContactCard>
                 <ContactCard>
@@ -84,15 +81,16 @@ export function FooterSection() {
                     <ContactCardHint>До 21:00 по Москве</ContactCardHint>
                   </ContactLink>
                 </ContactCard>
-                <LocationCard>
-                  <FaIcon icon={faLocationDot} size="2x" aria-hidden />
-                  <div>
-                    <ContactCardHeader as="span">Локация</ContactCardHeader>
-                    <ContactCardValue as="p">
-                      Москва
-                    </ContactCardValue>
-                  </div>
-                </LocationCard>
+                <ContactCard>
+                  <ContactLink href="">
+                    <ContactCardHeader>
+                      <FaIcon icon={faLocationDot} size="2x" aria-hidden />
+                      Локация
+                    </ContactCardHeader>
+                    <ContactCardValue>Россия, Москва</ContactCardValue>
+                    <ContactCardHint>ЮАО</ContactCardHint>
+                  </ContactLink>
+                </ContactCard>
               </ContactCardsGrid>
 
               <NavDivider />

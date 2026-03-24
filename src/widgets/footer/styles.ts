@@ -3,6 +3,7 @@ import { Body } from "@/shared/ui/text";
 
 export const FooterRoot = styled.footer`
   ${({ theme }) => css`
+    position: relative;
     padding: ${theme.space[6]} 0 ${theme.space[5]};
     background: linear-gradient(
       180deg,
@@ -19,7 +20,7 @@ export const FooterGrid = styled.div`
     gap: ${theme.space[5]};
 
     @media (min-width: 768px) {
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+      grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
       align-items: start;
     }
   `}

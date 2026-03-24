@@ -5,7 +5,7 @@ import { SkillCategoryBlock } from "@/features/skill-grid";
 import { Container } from "@/shared/ui/container";
 import { Heading2, Lead } from "@/shared/ui/text";
 import { Section } from "@/shared/ui/section";
-import { SkillsGrid, SkillsIntro, SkillsRoot } from "../styles";
+import { SkillsGrid, SkillsIntro, SkillsRoot } from "./styles";
 
 export function SkillsSection() {
   return (
@@ -15,7 +15,7 @@ export function SkillsSection() {
           <SkillsIntro>
             <Heading2>Навыки</Heading2>
             <Lead>
-              Стек из резюме: от React и TypeScript до тестов, Storybook и
+              Стек технологий: от React и TypeScript до тестов, Storybook и
               CI/CD.
             </Lead>
           </SkillsIntro>

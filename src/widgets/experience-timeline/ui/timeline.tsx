@@ -2,6 +2,7 @@
 
 import { experienceItems } from "@/entities/experience";
 import { Container } from "@/shared/ui/container";
+import { GradientBackground } from "@/shared/ui/gradient-background";
 import { Heading2, Lead } from "@/shared/ui/text";
 import { Section } from "@/shared/ui/section";
 import { ExperienceCard } from "./experience-card";
@@ -15,12 +16,13 @@ import {
 export function ExperienceTimeline() {
   return (
     <ExperienceRoot id="experience">
+      <GradientBackground accent="purple" angle={0} />
       <Container>
         <Section>
           <ExperienceIntro>
-            <Heading2>Опыт</Heading2>
+            <Heading2>Опыт работы</Heading2>
             <Lead>
-              Более 7 лет в веб-разработке: от вёрстки до продуктового React и
+              6+ лет в веб-разработке: от вёрстки до продуктового React и
               Next.js.
             </Lead>
           </ExperienceIntro>

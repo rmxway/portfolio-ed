@@ -3,8 +3,9 @@ import { media } from "@/theme/media";
 
 export const ExperienceRoot = styled.section`
   ${({ theme }) => css`
+    position: relative;
     padding: ${theme.space[6]} 0;
-    background: ${theme.colors.backgroundSecondary};
+    overflow: hidden;
     border-top: 1px solid ${theme.colors.glassBorder};
   `}
 `;
