@@ -36,11 +36,7 @@ export function FooterSection() {
           <FooterGrid>
             <IntroBlock>
               <Heading2>Контакты</Heading2>
-              <Lead>
-                Пишите на почту или в Telegram.
-                <br />
-                Телефон доступен до 21:00.
-              </Lead>
+              <Lead>Пишите на почту или в Telegram.</Lead>
             </IntroBlock>
             <div>
               <ContactLabel as="p">Связь</ContactLabel>

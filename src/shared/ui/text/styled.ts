@@ -44,7 +44,6 @@ export const Lead = styled.p`
     font-size: ${theme.typography.lead};
     line-height: 1.5;
     color: ${theme.colors.textMuted};
-    margin: 0 auto;
     max-width: 40rem;
   `}
 `;

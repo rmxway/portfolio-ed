@@ -5,6 +5,7 @@ import type { ExperienceItem } from "@/types/entities";
 import { Heading3 } from "@/shared/ui/text";
 import { fadeInUp } from "@/shared/lib/animations";
 import { Card } from "../styles";
+import { formatExperienceDurationText } from "../lib/experience-duration";
 import {
   ExperienceDesc,
   ExperienceHighlights,
@@ -19,6 +20,8 @@ type ExperienceCardProps = {
 };
 
 export function ExperienceCard({ item }: ExperienceCardProps) {
+  const durationText = formatExperienceDurationText(item.start, item.end);
+
   return (
     <MotionCard
       variants={fadeInUp}
@@ -26,7 +29,9 @@ export function ExperienceCard({ item }: ExperienceCardProps) {
       whileInView="visible"
       viewport={{ once: true, margin: "-80px" }}
     >
-      <ExperienceMeta>{item.period}</ExperienceMeta>
+      <ExperienceMeta>
+        {item.period} ( {durationText} )
+      </ExperienceMeta>
       <Heading3 as="h3">{item.company}</Heading3>
       <ExperienceRoleLine as="p">
         {item.role}

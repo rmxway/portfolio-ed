@@ -25,6 +25,14 @@ export type SkillCategory = {
 export type ExperienceItem = {
   id: string;
   period: string;
+  start: {
+    month: number; // 0-11
+    year: number;
+  };
+  end: {
+    month: number; // 0-11
+    year: number;
+  } | null; // null означает "настоящее время"
   company: string;
   role: string;
   location?: string;

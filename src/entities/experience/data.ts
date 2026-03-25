@@ -4,6 +4,8 @@ export const experienceItems: ExperienceItem[] = [
   {
     id: "freelance-2025",
     period: "Июнь 2025 — настоящее время",
+    start: { month: 5, year: 2025 },
+    end: null,
     company: "Фриланс",
     role: "Frontend-разработчик",
     location: "Москва",
@@ -18,6 +20,8 @@ export const experienceItems: ExperienceItem[] = [
   {
     id: "trust-medanketa",
     period: "Март 2023 — Апрель 2025",
+    start: { month: 2, year: 2023 },
+    end: { month: 3, year: 2025 },
     company: "Trust System (фриланс)",
     role: "Frontend-разработчик",
     location: "Москва",
@@ -32,6 +36,8 @@ export const experienceItems: ExperienceItem[] = [
   {
     id: "askona",
     period: "Ноябрь 2020 — Август 2022",
+    start: { month: 10, year: 2020 },
+    end: { month: 7, year: 2022 },
     company: "Аскона Тех",
     role: "Frontend-разработчик",
     location: "Москва",
@@ -46,6 +52,8 @@ export const experienceItems: ExperienceItem[] = [
   {
     id: "585-junior",
     period: "Ноябрь 2019 — Апрель 2020",
+    start: { month: 10, year: 2019 },
+    end: { month: 3, year: 2020 },
     company: "585, Холдинг",
     role: "Младший разработчик",
     location: "Москва",
@@ -60,6 +68,8 @@ export const experienceItems: ExperienceItem[] = [
   {
     id: "585-html",
     period: "Ноябрь 2017 — Октябрь 2019",
+    start: { month: 10, year: 2017 },
+    end: { month: 9, year: 2019 },
     company: "585, Холдинг",
     role: "HTML-верстальщик",
     location: "Москва",
