@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { Body } from "@/shared/ui/text";
+import { Body, Lead } from "@/shared/ui/text";
 
 export const FooterRoot = styled.footer`
   ${({ theme }) => css`
@@ -32,6 +32,10 @@ export const IntroBlock = styled.div`
     flex-direction: column;
     gap: ${theme.space[3]};
     max-width: 28rem;
+
+    ${Lead} {
+      margin: 0;
+    }
   `}
 `;
 

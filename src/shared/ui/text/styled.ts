@@ -45,6 +45,7 @@ export const Lead = styled.p`
     line-height: 1.5;
     color: ${theme.colors.textMuted};
     max-width: 40rem;
+    margin: 0 auto;
   `}
 `;
 
