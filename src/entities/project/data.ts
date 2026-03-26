@@ -2,8 +2,8 @@ import type { Project } from "@/types/entities";
 
 export const projects: Project[] = [
   {
-    id: "react-todos",
-    title: "React Todos",
+    id: "react-notes",
+    title: "React Notes",
     subtitle: "Заметки и задачи на FSD",
     description:
       "FSD-архитектура на Next.js: CRUD заметок, фильтры, сортировка, оптимистичные обновления React Query, NextAuth и Firestore.",
@@ -18,10 +18,10 @@ export const projects: Project[] = [
       "Framer Motion",
     ],
     kind: "pet",
-    githubUrl: "https://github.com/rmxway/react-todos",
-    demoUrl: "https://react-todos-service.vercel.app",
+    githubUrl: "https://github.com/rmxway/react-notes",
+    demoUrl: "https://react-notes-service.vercel.app",
     accent: "indigo",
-    previewImage: "/img/todos.jpg",
+    previewImage: "/img/notes.jpg",
   },
   {
     id: "itguru-test",
