@@ -12,7 +12,7 @@ export const experienceItems: ExperienceItem[] = [
     description:
       "Pet-проекты, тестовые задания и развитие существующих приложений с упором на современный стек и AI-инструменты.",
     highlights: [
-      "Green Shop, React Todos, ITGuru Test, Соколиная охота",
+      "Green Shop, React Notes, ITGuru Test, Соколиная охота",
       "Автотесты, Storybook, NextAuth, Firebase",
       "Повышение скорости разработки за счёт AI-практик",
     ],
