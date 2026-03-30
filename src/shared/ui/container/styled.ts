@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { media } from "@/theme/media";
 
+/** Центрируемая оболочка контента с max-width и горизонтальными отступами. */
 export const Container = styled.div`
   ${({ theme }) => css`
     width: 100%;

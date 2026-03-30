@@ -3,9 +3,12 @@
 import { skillCategories } from "@/entities/skill";
 import { SkillCategoryBlock } from "@/features/skill-grid";
 import { Container } from "@/shared/ui/container";
+import { Flex } from "@/shared/ui/flex";
 import { Heading2, Lead } from "@/shared/ui/text";
 import { Section } from "@/shared/ui/section";
-import { SkillsGrid, SkillsIntro, SkillsRoot } from "./styles";
+import { SkillsGrid, SkillsIntro, SkillsRoot } from "./styled";
+import { FaIcon } from "@/shared/ui/fa-icon";
+import { faGears } from "@/shared/lib/fontawesome-icons";
 
 export function SkillsSection() {
   return (
@@ -13,7 +16,12 @@ export function SkillsSection() {
       <Container>
         <Section>
           <SkillsIntro>
-            <Heading2>Навыки</Heading2>
+            <Heading2>
+              <Flex as="span" $inline $alignItems="center" $gap={2}>
+                <FaIcon icon={faGears} pixels={18} aria-hidden />
+                Навыки
+              </Flex>
+            </Heading2>
             <Lead>
               Стек технологий: от React и TypeScript до тестов, Storybook и
               CI/CD.

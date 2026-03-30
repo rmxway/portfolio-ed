@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 import type { ExperienceItem } from "@/types/entities";
 import { Heading3 } from "@/shared/ui/text";
 import { fadeInUp } from "@/shared/lib/animations";
-import { Card } from "../styles";
-import { formatExperienceDurationText } from "../lib/experience-duration";
 import {
+  Card,
   ExperienceDesc,
   ExperienceHighlights,
   ExperienceMeta,
   ExperienceRoleLine,
 } from "../styled";
+import { formatExperienceDurationText } from "../lib/experience-duration";
 
 const MotionCard = motion.create(Card);
 

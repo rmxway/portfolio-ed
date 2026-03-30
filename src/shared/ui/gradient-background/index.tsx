@@ -5,7 +5,9 @@ import styled, { css } from "styled-components";
 import { ACCENT_COLORS } from "@/shared/lib";
 
 type GradientBackgroundProps = {
+  /** Ключ цвета акцента из `ACCENT_COLORS` (`@/shared/lib`). */
   accent?: keyof typeof ACCENT_COLORS;
+  /** Угол линейного градиента акцентного слоя, в градусах. */
   angle?: number;
 };
 
@@ -79,6 +81,10 @@ const Orb = styled(motion.div)<{ $accent: string }>`
   `}
 `;
 
+/**
+ * Декоративный многослойный фон (градиенты + размытый «орб»).
+ * Родитель должен иметь `position: relative` (и при необходимости `overflow: hidden`).
+ */
 export function GradientBackground({
   accent = "blue",
   angle = 130,

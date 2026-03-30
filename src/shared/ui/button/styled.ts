@@ -3,8 +3,10 @@
 import Link from "next/link";
 import styled, { css } from "styled-components";
 
+/** Визуальный стиль кнопки или ссылки-кнопки. */
 export type ButtonVariant = "primary" | "secondary" | "ghost";
 
+/** Общие стили для {@link StyledButton} и {@link StyledLink} (размеры, фокус, варианты). */
 export const buttonBase = css<{ $variant: ButtonVariant }>`
   ${({ theme, $variant }) => css`
     display: inline-flex;
@@ -69,10 +71,12 @@ export const buttonBase = css<{ $variant: ButtonVariant }>`
   `}
 `;
 
+/** Нативная кнопка с вариантами из `buttonBase`. Обычно используют обёртку {@link Button}. */
 export const StyledButton = styled.button<{ $variant: ButtonVariant }>`
   ${buttonBase}
 `;
 
+/** Ссылка Next.js, оформленная как кнопка. Обычно через {@link Button} с `href`. */
 export const StyledLink = styled(Link)<{ $variant: ButtonVariant }>`
   ${buttonBase}
 `;

@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { media } from "@/theme/media";
 
+/** Главный заголовок страницы (hero); размер из `theme.typography.heroTitle`. */
 export const Heading1 = styled.h1`
   ${({ theme }) => css`
     font-size: ${theme.typography.heroTitle};
@@ -11,6 +12,7 @@ export const Heading1 = styled.h1`
   `}
 `;
 
+/** Заголовок секции; размер из `theme.typography.sectionTitle`. */
 export const Heading2 = styled.h2`
   ${({ theme }) => css`
     font-size: ${theme.typography.sectionTitle};
@@ -25,6 +27,7 @@ export const Heading2 = styled.h2`
   `}
 `;
 
+/** Подзаголовок карточки или вложенного блока. */
 export const Heading3 = styled.h3`
   ${({ theme }) => css`
     font-size: 1.3rem;
@@ -39,6 +42,7 @@ export const Heading3 = styled.h3`
   `}
 `;
 
+/** Вводный абзац под заголовком секции; приглушённый цвет, ограниченная ширина. */
 export const Lead = styled.p`
   ${({ theme }) => css`
     font-size: ${theme.typography.lead};
@@ -49,6 +53,7 @@ export const Lead = styled.p`
   `}
 `;
 
+/** Основной текст параграфа. */
 export const Body = styled.p`
   ${({ theme }) => css`
     font-size: ${theme.typography.body};
@@ -57,6 +62,7 @@ export const Body = styled.p`
   `}
 `;
 
+/** Мелкая надпись над заголовком (категория, метка). */
 export const Eyebrow = styled.div`
   ${({ theme }) => css`
     display: block;

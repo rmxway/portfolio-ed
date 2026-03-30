@@ -6,7 +6,7 @@ export const HeroRoot = styled.header`
   ${({ theme }) => css`
     position: relative;
     min-height: 100vh;
-    min-height: 100dvh;
+    min-height: 100svh;
     display: flex;
     align-items: center;
     justify-content: center;

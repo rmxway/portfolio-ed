@@ -20,7 +20,7 @@ export const ProjectsIntro = styled.div`
 export const ProjectSlide = styled.div`
   ${({ theme }) => css`
     min-height: 100vh;
-    min-height: 100dvh;
+    min-height: 100svh;
     display: flex;
     align-items: center;
     padding: ${theme.space[6]} 0;

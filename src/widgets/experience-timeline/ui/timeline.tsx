@@ -3,6 +3,7 @@
 import { experienceItems } from "@/entities/experience";
 import { Container } from "@/shared/ui/container";
 import { GradientBackground } from "@/shared/ui/gradient-background";
+import { Flex } from "@/shared/ui/flex";
 import { Heading2, Lead } from "@/shared/ui/text";
 import { Section } from "@/shared/ui/section";
 import { ExperienceCard } from "./experience-card";
@@ -11,7 +12,9 @@ import {
   ExperienceRoot,
   Timeline,
   TimelineItem,
-} from "../styles";
+} from "../styled";
+import { FaIcon } from "@/shared/ui/fa-icon";
+import { faUserTie } from "@/shared/lib/fontawesome-icons";
 
 export function ExperienceTimeline() {
   return (
@@ -20,7 +23,12 @@ export function ExperienceTimeline() {
       <Container>
         <Section>
           <ExperienceIntro>
-            <Heading2>Опыт работы</Heading2>
+            <Heading2>
+              <Flex as="span" $inline $alignItems="center" $gap={2}>
+                <FaIcon icon={faUserTie} pixels={18} aria-hidden />
+                Опыт работы
+              </Flex>
+            </Heading2>
             <Lead>
               6+ лет в веб-разработке: от вёрстки до продуктового React и
               Next.js.

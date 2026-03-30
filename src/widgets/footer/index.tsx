@@ -26,7 +26,7 @@ import {
   LinkRow,
   NavDivider,
   NavLinkInner,
-} from "./styles";
+} from "./styled";
 
 export function FooterSection() {
   return (

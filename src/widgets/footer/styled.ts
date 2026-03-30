@@ -124,7 +124,6 @@ export const ContactCardHint = styled.span`
 
 export const LocationCard = styled.div`
   ${({ theme }) => css`
-    // grid-column: 1 / -1;
     color: ${theme.colors.textMuted};
     border-radius: ${theme.radii.lg};
     border: 1px solid ${theme.colors.glassBorder};

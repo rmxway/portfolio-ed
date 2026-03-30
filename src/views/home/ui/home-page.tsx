@@ -10,7 +10,7 @@ import { SkillsSection } from "@/widgets/skills-section";
 const Page = styled.main`
   ${({ theme }) => css`
     min-height: 100vh;
-    min-height: 100dvh;
+    min-height: 100svh;
     background: ${theme.colors.background};
   `}
 `;

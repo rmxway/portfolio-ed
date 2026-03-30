@@ -17,7 +17,7 @@ import {
   HeroPhotoWrap,
   HeroRoot,
   HeroSurface,
-} from "./styles";
+} from "./styled";
 
 export function HeroSection() {
   return (
