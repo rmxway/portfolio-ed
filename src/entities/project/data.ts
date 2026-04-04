@@ -4,9 +4,9 @@ export const projects: Project[] = [
   {
     id: "simpletrading",
     title: "Simple Trading",
-    subtitle: "Курс USD/RUB по данным ЦБ РФ",
+    subtitle: "USD, EUR, CNY к рублю по данным ЦБ РФ",
     description:
-      "Дашборд с графиком динамики и сводкой по курсу доллара (планируется выбор актива): данные Центробанка через API, кеш TanStack Query и sessionStorage. ",
+      "График динамики и инфоблоки на 3 месяца (1 месяц и 1 неделю): на главной переключение котировок USD, EUR и CNY. Данные ЦБ через маршрут приложения (обход CORS). TanStack Query, кеш в памяти и sessionStorage (~10 мин).",
     stack: [
       "Next.js",
       "TypeScript",
