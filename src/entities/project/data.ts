@@ -2,6 +2,25 @@ import type { Project } from "@/types/entities";
 
 export const projects: Project[] = [
   {
+    id: "simpletrading",
+    title: "Simple Trading",
+    subtitle: "Курс USD/RUB по данным ЦБ РФ",
+    description:
+      "Дашборд с графиком динамики и сводкой по курсу доллара (планируется выбор актива): данные Центробанка через API, кеш TanStack Query и sessionStorage. ",
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "TanStack Query",
+      "styled-components",
+      "lightweight-charts",
+    ],
+    kind: "pet",
+    githubUrl: "https://github.com/rmxway/simpletrading",
+    demoUrl: "https://simpletrading-page.vercel.app/",
+    accent: "yellow",
+    previewImage: "/img/simpletrading.jpg",
+  },
+  {
     id: "react-notes",
     title: "React Notes",
     subtitle: "Заметки и задачи на FSD",
