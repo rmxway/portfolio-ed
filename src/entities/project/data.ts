@@ -6,13 +6,15 @@ export const projects: Project[] = [
     title: "Simple Trading",
     subtitle: "USD, EUR, CNY к рублю по данным ЦБ РФ",
     description:
-      "График динамики и инфоблоки на 3 месяца (1 месяц и 1 неделю): на главной переключение котировок USD, EUR и CNY. Данные ЦБ через маршрут приложения (обход CORS). TanStack Query, кеш в памяти и sessionStorage (~10 мин).",
+      "График и инфоблоки за ~3 месяца для USD, EUR и CNY: на главной селект переключает валюту, при смене данных экран не пустеет (keepPreviousData), карточки уходят в состояние $busy (полупрозрачность). Данные ЦБ через маршрут /api/cbr (обход CORS). При ошибке запроса последние значения сохраняются, уведомление — Snackbar и Alert (MUI). Кеш в памяти и sessionStorage (~10 мин).",
     stack: [
       "Next.js",
       "TypeScript",
       "TanStack Query",
       "styled-components",
+      "MUI",
       "lightweight-charts",
+      "Framer Motion",
     ],
     kind: "pet",
     githubUrl: "https://github.com/rmxway/simpletrading",
