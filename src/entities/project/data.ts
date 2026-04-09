@@ -2,11 +2,30 @@ import type { Project } from "@/types/entities";
 
 export const projects: Project[] = [
   {
+    id: "stories",
+    title: "Stories",
+    subtitle: "Виджет историй в духе мессенджеров и соцсетей",
+    description:
+      "Превью с кольцом прогресса, полноэкранный просмотр с автопереключением, навигация тапами и с клавиатуры, просмотренные истории запоминаются в localStorage. Структура по Feature-Sliced Design.",
+    stack: [
+      "Next.js 15",
+      "React 19",
+      "TypeScript",
+      "styled-components",
+      "Framer Motion",
+    ],
+    kind: "pet",
+    githubUrl: "https://github.com/rmxway/stories",
+    demoUrl: "https://stories-widget.vercel.app/",
+    accent: "violet",
+    previewImage: "/img/stories.jpg",
+  },
+  {
     id: "simpletrading",
     title: "Simple Trading",
     subtitle: "USD, EUR, CNY к рублю по данным ЦБ РФ",
     description:
-      "FSD-архитектура на Next.js: трекер курсов доллара, евро и юаня к рублю: график за три месяца, селект для переключения валюты, живые данные ЦБ. Интерфейс не моргает при смене котировки — старые цифры остаются, пока грузятся новые. Если запрос упал, значения не пропадают, а ошибка всплывает уведомлением.",    
+      "FSD-архитектура на Next.js: трекер курсов доллара, евро и юаня к рублю: график за три месяца, селект для переключения валюты, живые данные ЦБ. Интерфейс не моргает при смене котировки — старые цифры остаются, пока грузятся новые. Если запрос упал, значения не пропадают, а ошибка всплывает уведомлением.",
     stack: [
       "Next.js",
       "TypeScript",

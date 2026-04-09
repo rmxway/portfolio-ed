@@ -122,7 +122,7 @@ export const PreviewImage = styled.img`
     background: ${theme.colors.glassBackground};
     margin: 20px;
     object-fit: cover;
-    object-position: top left;
+    object-position: top center;
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -moz-user-select: none;
