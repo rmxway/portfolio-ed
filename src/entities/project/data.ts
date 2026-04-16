@@ -6,13 +6,14 @@ export const projects: Project[] = [
     title: "Stories",
     subtitle: "Виджет историй в духе мессенджеров и соцсетей",
     description:
-      "Превью с кольцом прогресса, полноэкранный просмотр с автопереключением, навигация тапами и с клавиатуры, просмотренные истории запоминаются в localStorage. Структура по Feature-Sliced Design.",
+      "Демо виджета историй в стиле соцсетей: превью с кольцом прогресса, полноэкранный просмотр с автопереключением, навигация по тапам и клавиатуре, режим просмотра зрителей и запоминание просмотренных в localStorage.",
     stack: [
-      "Next.js 15",
+      "Next.js 15 (App Router)",
       "React 19",
       "TypeScript",
       "styled-components",
       "Framer Motion",
+      "Sass",
     ],
     kind: "pet",
     githubUrl: "https://github.com/rmxway/stories",
