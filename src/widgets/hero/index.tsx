@@ -33,7 +33,7 @@ export function HeroSection() {
             <HeroGrid>
               <HeroCopy>
                 <motion.div variants={staggerItem}>
-                  <Eyebrow>Frontend-разработчик</Eyebrow>
+                  <Eyebrow>AI-driven Frontend developer</Eyebrow>
                 </motion.div>
                 <motion.div variants={staggerItem}>
                   <Heading1>Довгань Евгений</Heading1>
@@ -41,8 +41,7 @@ export function HeroSection() {
                 <motion.div variants={staggerItem}>
                   <Lead>
                     React, TypeScript и Next.js — продуктовые интерфейсы,
-                    производительность и современные практики. Москва · гибрид,
-                    офис или удалённо.
+                    производительность, использование AI и современные практики. Москва · гибрид или удалённо.
                   </Lead>
                 </motion.div>
                 <motion.div variants={staggerItem}>
