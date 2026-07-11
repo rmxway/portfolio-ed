@@ -3,9 +3,9 @@ import type { ExperienceItem } from "@/types/entities";
 export const experienceItems: ExperienceItem[] = [
   {
     id: "freelance-2025",
-    period: "Июнь 2025 — настоящее время",
+    period: "Июнь 2025 — Май 2026",
     start: { month: 5, year: 2025 },
-    end: null,
+    end: { month: 4, year: 2026 },
     company: "Фриланс",
     role: "Frontend-разработчик",
     location: "Москва",
@@ -52,31 +52,19 @@ export const experienceItems: ExperienceItem[] = [
   {
     id: "585-junior",
     period: "Ноябрь 2019 — Апрель 2020",
-    start: { month: 10, year: 2019 },
+    start: { month: 10, year: 2017 },
     end: { month: 3, year: 2020 },
     company: "585, Холдинг",
     role: "Младший разработчик",
     location: "Москва",
     description:
-      "Поддержка и развитие витрины под руководством senior-разработчика.",
-    highlights: [
-      "Формы с валидацией",
-      "Новые UI-блоки и страницы",
-      "Оптимизация скорости",
-    ],
-  },
-  {
-    id: "585-html",
-    period: "Ноябрь 2017 — Октябрь 2019",
-    start: { month: 10, year: 2017 },
-    end: { month: 9, year: 2019 },
-    company: "585, Холдинг",
-    role: "HTML-верстальщик",
-    location: "Москва",
-    description: "Вёрстка по макетам, переход к современному фронтенду.",
+      "Вёрстка по макетам, переход к современному фронтенду. Поддержка и развитие витрины под руководством senior-разработчика. Большой опыт вёрстки и оптимизации скорости загрузки страницы.",
     highlights: [
       "PSD / Zeplin / Figma → HTML, LESS/SCSS, Pug, Webpack",
       "Сокращение времени загрузки страницы с ~7 с до ~1.5 с",
+      "Формы с валидацией",
+      "Новые UI-блоки и страницы",
+      "Оптимизация скорости",
     ],
   },
 ];

@@ -13,8 +13,6 @@ import {
   Timeline,
   TimelineItem,
 } from "../styled";
-import { FaIcon } from "@/shared/ui/fa-icon";
-import { faUserTie } from "@/shared/lib/fontawesome-icons";
 
 export function ExperienceTimeline() {
   return (
@@ -25,12 +23,11 @@ export function ExperienceTimeline() {
           <ExperienceIntro>
             <Heading2>
               <Flex as="span" $inline $alignItems="center" $gap={2}>
-                <FaIcon icon={faUserTie} pixels={18} aria-hidden />
                 Опыт работы
               </Flex>
             </Heading2>
             <Lead>
-              6+ лет в веб-разработке: от вёрстки до продуктового React и
+              ~5 лет коммерческой разработки от вёрстки до продуктового React и
               Next.js.
             </Lead>
           </ExperienceIntro>

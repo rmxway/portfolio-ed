@@ -7,8 +7,6 @@ import { Flex } from "@/shared/ui/flex";
 import { Heading2, Lead } from "@/shared/ui/text";
 import { Section } from "@/shared/ui/section";
 import { SkillsGrid, SkillsIntro, SkillsRoot } from "./styled";
-import { FaIcon } from "@/shared/ui/fa-icon";
-import { faGears } from "@/shared/lib/fontawesome-icons";
 
 export function SkillsSection() {
   return (
@@ -18,7 +16,6 @@ export function SkillsSection() {
           <SkillsIntro>
             <Heading2>
               <Flex as="span" $inline $alignItems="center" $gap={2}>
-                <FaIcon icon={faGears} pixels={18} aria-hidden />
                 Навыки
               </Flex>
             </Heading2>
@@ -28,8 +25,8 @@ export function SkillsSection() {
             </Lead>
           </SkillsIntro>
           <SkillsGrid>
-            {skillCategories.map((category) => (
-              <SkillCategoryBlock key={category.id} category={category} />
+            {skillCategories.map((category, i) => (
+              <SkillCategoryBlock key={category.id} category={category} num={i} />
             ))}
           </SkillsGrid>
         </Section>

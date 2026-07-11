@@ -19,8 +19,10 @@ export const FooterGrid = styled.div`
     display: grid;
     gap: ${theme.space[5]};
 
+    margin-top: ${theme.space[5]};
+
     @media (min-width: 768px) {
-      grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+      grid-template-columns: 2fr;
       align-items: start;
     }
   `}

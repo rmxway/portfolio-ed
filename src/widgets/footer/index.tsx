@@ -19,7 +19,6 @@ import {
   ContactCardHint,
   ContactCardValue,
   ContactCardsGrid,
-  ContactLabel,
   FooterGrid,
   FooterRoot,
   IntroBlock,
@@ -33,13 +32,12 @@ export function FooterSection() {
     <FooterRoot id="contact">
       <Container>
         <Section>
+          <IntroBlock>
+            <Heading2>Контакты</Heading2>
+            <Lead>Пишите на почту или в Telegram.</Lead>
+          </IntroBlock>
           <FooterGrid>
-            <IntroBlock>
-              <Heading2>Контакты</Heading2>
-              <Lead>Пишите на почту или в Telegram.</Lead>
-            </IntroBlock>
             <div>
-              <ContactLabel as="p">Связь</ContactLabel>
               <ContactCardsGrid>
                 <ContactCard>
                   <ContactLink href="mailto:rmxway@mail.ru">
@@ -90,7 +88,6 @@ export function FooterSection() {
               </ContactCardsGrid>
 
               <NavDivider />
-              <ContactLabel as="p">Навигация</ContactLabel>
               <LinkRow>
                 <ContactLink href="#top">
                   <NavLinkInner>

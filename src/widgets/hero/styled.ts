@@ -66,19 +66,18 @@ export const HeroPhotoWrap = styled(motion.div)`
   ${({ theme }) => css`
     order: -1;
     justify-self: center;
-    width: min(52vw, 280px);
-    height: min(52vw, 280px);
+    width: min(52vw, 220px);
+    height: min(52vw, 220px);
     border-radius: ${theme.radii.full};
     overflow: hidden;
     border: 1px solid ${theme.colors.glassBorder};
     box-shadow: ${theme.shadows.md};
-    background: ${theme.colors.gray100};
 
     ${media.greaterThan("md")`
       order: 0;
       justify-self: end;
-      width: min(30vw, 320px);
-      height: min(30vw, 320px);
+      width: min(30vw, 250px);
+      height: min(30vw, 250px);
     `}
   `}
 `;
@@ -86,7 +85,7 @@ export const HeroPhotoWrap = styled(motion.div)`
 export const HeroPhoto = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-position: center;
   pointer-events: none;
 `;
 

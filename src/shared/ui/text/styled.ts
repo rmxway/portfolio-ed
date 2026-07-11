@@ -8,6 +8,7 @@ export const Heading1 = styled.h1`
     font-weight: 600;
     letter-spacing: -0.03em;
     line-height: 1.05;
+    z-index: 1;
     color: ${theme.colors.text};
   `}
 `;
@@ -19,6 +20,7 @@ export const Heading2 = styled.h2`
     font-weight: 600;
     letter-spacing: -0.025em;
     line-height: 1.08;
+    z-index: 1;
     color: ${theme.colors.text};
 
     ${media.lessThan("md")`
@@ -34,6 +36,7 @@ export const Heading3 = styled.h3`
     font-weight: 600;
     letter-spacing: -0.02em;
     line-height: 1.15;
+    z-index: 1;
     color: ${theme.colors.text};
 
     ${media.greaterThan("md")`
@@ -50,6 +53,7 @@ export const Lead = styled.p`
     color: ${theme.colors.textMuted};
     max-width: 40rem;
     margin: 0 auto;
+    z-index: 1;
   `}
 `;
 

@@ -33,15 +33,16 @@ export function HeroSection() {
             <HeroGrid>
               <HeroCopy>
                 <motion.div variants={staggerItem}>
-                  <Eyebrow>AI-driven Frontend developer</Eyebrow>
+                  <Eyebrow>
+                    Frontend-разработчик (React / Next.js / TypeScript)
+                  </Eyebrow>
                 </motion.div>
                 <motion.div variants={staggerItem}>
                   <Heading1>Довгань Евгений</Heading1>
                 </motion.div>
                 <motion.div variants={staggerItem}>
                   <Lead>
-                    React, TypeScript и Next.js — продуктовые интерфейсы,
-                    производительность, использование AI и современные практики. Москва · гибрид или удалённо.
+                    Коммерческий опыт ~ 5 лет. После перерыва (2022–2025) активно поддерживал навыки через пет-проекты: архитектура FSD, тесты (Jest), Storybook, обработка edge-кейсов. Готов к задачам любого уровня: поддержка, доработка, рефакторинг, покрытие тестами. Быстро вникаю в чужой код и соблюдаю код-стайл. Использую AI в разработке как инструмент, а не замену. 
                   </Lead>
                 </motion.div>
                 <motion.div variants={staggerItem}>

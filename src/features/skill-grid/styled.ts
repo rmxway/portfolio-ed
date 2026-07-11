@@ -17,6 +17,7 @@ export const SkillBadgeRoot = styled.span`
 export const SkillCategoryPanel = styled.div`
   ${({ theme }) => css`
     display: flex;
+    position: relative;
     flex-direction: column;
     gap: ${theme.space[3]};
     padding: ${theme.space[4]};
@@ -32,5 +33,6 @@ export const SkillBadgeList = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: ${theme.space[2]};
+    z-index: 1;
   `}
 `;
