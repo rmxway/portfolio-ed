@@ -24,7 +24,7 @@ export function ProjectsSection() {
             </Heading2>
             <Lead>
               От свежих pet-проектов и продуктовой разработки до крупного
-              e-commerce — сверху новее, ниже раньше по времени.
+              e-commerce.
             </Lead>
           </Section>
         </Container>
