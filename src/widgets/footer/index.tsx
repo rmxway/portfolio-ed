@@ -72,7 +72,7 @@ export function FooterSection() {
                       Телефон
                     </ContactCardHeader>
                     <ContactCardValue>+7 (967) 229-58-02</ContactCardValue>
-                    <ContactCardHint>До 21:00 по Москве</ContactCardHint>
+                    <ContactCardHint>До 22:00 по Москве</ContactCardHint>
                   </ContactLink>
                 </ContactCard>
                 <ContactCard>

@@ -32,7 +32,7 @@ export const Heading2 = styled.h2`
 /** Подзаголовок карточки или вложенного блока. */
 export const Heading3 = styled.h3`
   ${({ theme }) => css`
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: -0.02em;
     line-height: 1.15;
@@ -40,7 +40,7 @@ export const Heading3 = styled.h3`
     color: ${theme.colors.text};
 
     ${media.greaterThan("md")`
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     `}
   `}
 `;
@@ -53,7 +53,12 @@ export const Lead = styled.p`
     color: ${theme.colors.textMuted};
     max-width: 40rem;
     margin: 0 auto;
+    margin-bottom: 10px;
     z-index: 1;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   `}
 `;
 

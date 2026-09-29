@@ -31,7 +31,7 @@ export const tokens: Omit<AppTheme, "breakpoints"> = {
     card: "linear-gradient(145deg, #ffffff 0%, #f5f5f7 100%)",
   },
   typography: {
-    heroTitle: "clamp(2.5rem, 8vw, 4rem)",
+    heroTitle: "clamp(2rem, 8vw, 3.1rem)",
     sectionTitle: "clamp(2rem, 5vw, 3rem)",
     lead: "clamp(1.125rem, 2vw, 1.375rem)",
     body: "1.0625rem",

@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "@fortawesome/fontawesome-svg-core/styles";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import { AppProviders } from "@/shared/providers";
 
 const geistSans = Geist({
@@ -23,7 +23,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
-  userScalable: false,
+  userScalable: true,
 };
 
 export default function RootLayout({
