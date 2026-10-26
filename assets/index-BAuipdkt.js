@@ -479,9 +479,9 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
         overflow: hidden;
         padding: ${e.space[6]} ${e.space[3]} ${e.space[5]};
 
-        ${S.greaterThan(`md`)`
-      padding: ${e.space[6]} ${e.space[4]};
-    `}
+        ${S.greaterThan(`lg`)`
+            padding: ${e.space[6]} ${e.space[4]};
+        `}
     `}
 `,Ze=v(d.div)`
     ${({theme:e})=>y`
@@ -492,7 +492,6 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         gap: ${e.space[6]};
     `}
 `,Qe=v.div`
@@ -502,10 +501,10 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
         align-items: center;
         gap: ${e.space[5]};
 
-        ${S.greaterThan(`md`)`
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: ${e.space[6]};
-    `}
+        ${S.greaterThan(`lg`)`
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: ${e.space[6]};
+        `}
     `}
 `,$e=v.div`
     ${({theme:e})=>y`
@@ -514,11 +513,11 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
         gap: ${e.space[3]};
         text-align: center;
 
-        ${S.greaterThan(`md`)`
-      text-align: left;
-      align-items: flex-start;
-      gap: ${e.space[6]};
-    `}
+        ${S.greaterThan(`lg`)`
+            text-align: left;
+            align-items: flex-start;
+            gap: ${e.space[6]};
+        `}
     `}
 `,et=v(d.div)`
     ${({theme:e})=>y`
@@ -531,12 +530,12 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
         border: 1px solid ${e.colors.glassBorder};
         box-shadow: ${e.shadows.md};
 
-        ${S.greaterThan(`md`)`
-      order: 0;
-      justify-self: end;
-      width: min(30vw, 250px);
-      height: min(30vw, 250px);
-    `}
+        ${S.greaterThan(`lg`)`
+            order: 0;
+            justify-self: end;
+            width: min(30vw, 250px);
+            height: min(30vw, 250px);
+        `}
     `}
 `,tt=v.img`
     width: 100%;
@@ -555,31 +554,37 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
         gap: ${e.space[2]};
         margin-top: ${e.space[2]};
 
-        ${S.greaterThan(`md`)`
-      justify-content: flex-start;
-    `}
+        ${S.greaterThan(`lg`)`
+            justify-content: flex-start;
+        `}
     `}
 `;function it(){return(0,w.jsxs)(Xe,{id:`top`,children:[(0,w.jsx)(F,{accent:`blue`,angle:130}),(0,w.jsx)(nt,{children:(0,w.jsx)(D,{children:(0,w.jsx)(Ze,{variants:k,initial:`hidden`,animate:`visible`,children:(0,w.jsxs)(Qe,{children:[(0,w.jsxs)($e,{children:[(0,w.jsx)(d.div,{variants:A,children:(0,w.jsx)(Te,{children:`Frontend-разработчик`})}),(0,w.jsx)(d.div,{variants:A,children:(0,w.jsx)(we,{children:`Довгань Евгений`})}),(0,w.jsxs)(d.div,{variants:A,children:[(0,w.jsx)(z,{children:`Коммерческий опыт 5 лет. Во время перерыва (2023–2026) активно поддерживал навыки через временные проекты и учебу на пет-проектах: React / TypeScript, Next.js, архитектура FSD, тесты (Jest), Storybook, обработка edge-кейсов.`}),(0,w.jsx)(z,{children:`В октябре 2026 закончил курс по Frontend-разработке и Web-дизайну в РЭУ им. Г.В. Плеханова. В результате защитил итоговый проект и получил диплом о профессиональной переподготовке.`}),(0,w.jsx)(z,{children:`Готов к задачам любого уровня: новые проекты, поддержка, доработка, рефакторинг, покрытие тестами. Быстро вникаю в чужой код и соблюдаю code style. Использую AI в разработке как инструмент, а не замену.`})]}),(0,w.jsx)(d.div,{variants:A,children:(0,w.jsxs)(rt,{children:[(0,w.jsxs)(K,{href:`#projects`,variant:`primary`,children:[(0,w.jsx)(U,{icon:pe.faFolderOpen,pixels:16,"aria-hidden":!0}),`Смотреть проекты`]}),(0,w.jsxs)(K,{href:`#contact`,variant:`secondary`,children:[(0,w.jsx)(U,{icon:he.faPaperPlane,pixels:16,"aria-hidden":!0}),`Связаться`]})]})})]}),(0,w.jsx)(et,{variants:A,children:(0,w.jsx)(tt,{src:`./img/resume2.jpg`,alt:`Довгань Евгений`})})]})})})})]})}var at=[{id:`diving-center`,title:`Дайвинг-центр`,subtitle:`Итоговый проект обучения на курсе`,description:`Результат обучения на курсе Frontend-разработка и Web-дизайн в РЭУ им Г.В. Плеханова. Проект проектировался в Figma с нуля, после чего был перенесен на React. Разработан с помощью инструментов которые были изучены на курсе.`,stack:[`HTML`,`CSS`,`TypeScript`,`React`,`gh-pages`,`Font Awesome`,`ESLint`,`Prettier`],kind:`pet`,githubUrl:`https://github.com/rmxway/diving-center`,demoUrl:`https://rmxway.github.io/diving-center/`,accent:`blue`,previewImage:`./img/diving-center.jpg`},{id:`green-shop`,title:`Green Shop Brand`,subtitle:`Интернет-магазин натуральной продукции`,description:`Каталог с поиском и фильтрами, корзина, избранное, сравнение товаров, NextAuth, личный кабинет, заказы в Firestore, тёмная тема, Storybook и тесты. Jest + React Testing Library: тесты ключевых компонентов. Storybook: визуальная документация 12+ компонентов UI-кита. Тёмная тема через styled-components.`,stack:[`Next.js 16`,`React 19`,`TypeScript`,`styled-components`,`Redux Toolkit`,`RTK Query`,`Firebase`,`NextAuth`,`Storybook`,`React Testing Library`,`Jest`,`ESLint`,`Prettier`],kind:`pet`,githubUrl:`https://github.com/rmxway/green-shop`,demoUrl:`https://green-shop-brand.vercel.app/`,accent:`emerald`,previewImage:`./img/green-shop.jpg`},{id:`medanketa`,title:`Medanketa`,subtitle:`Медицинские анкеты и аналитика`,description:`Список и прохождение анкет, статистика, шаблоны и справочники. Интеграция API, оптимизация загрузки и рефакторинг.`,stack:[`React`,`TypeScript`,`Vite`,`TanStack Query`,`styled-components`,`ESLint`,`Prettier`],kind:`commercial`,githubUrl:`https://github.com/rmxway/medanketa`,demoUrl:`https://medanketa.com/`,accent:`purple`,previewImage:`./img/medanketa.jpg`},{id:`stories`,title:`Stories`,subtitle:`Виджет историй в духе мессенджеров и соцсетей`,description:`Демо виджета историй в стиле соцсетей: превью с кольцом прогресса, полноэкранный просмотр с автопереключением, навигация по тапам и клавиатуре, двухпальцевый zoom активной истории, режим просмотра зрителей и запоминание просмотренных в localStorage. Настроил ESLint/Prettier, написал README с инструкцией по запуску — код готов к передаче в команду.`,stack:[`Next.js`,`TypeScript`,`styled-components`,`Framer Motion`,`ESLint`,`Prettier`],kind:`pet`,githubUrl:`https://github.com/rmxway/stories`,demoUrl:`https://stories-widget.vercel.app/`,accent:`violet`,previewImage:`./img/stories.jpg`},{id:`simpletrading`,title:`Simple Trading`,subtitle:`USD, EUR, CNY к рублю по данным ЦБ РФ`,description:`Трекер курсов доллара, евро и юаня к рублю: график за три месяца, переключение валюты, живые данные ЦБ. Интерфейс не моргает при смене котировки — старые цифры остаются, пока грузятся новые. Если запрос упал, значения не пропадают, а ошибка всплывает уведомлением. Архитектура FSD для лёгкой поддержки.`,stack:[`Next.js`,`TypeScript`,`TanStack Query`,`styled-components`,`MUI`,`lightweight-charts`,`Framer Motion`,`ESLint`,`Prettier`],kind:`pet`,githubUrl:`https://github.com/rmxway/simpletrading`,demoUrl:`https://simpletrading-page.vercel.app/`,accent:`yellow`,previewImage:`./img/simpletrading.jpg`},{id:`react-notes`,title:`React Notes`,subtitle:`Заметки и задачи на FSD`,description:`CRUD заметок, фильтры, сортировка, оптимистичные обновления React Query, NextAuth и Firestore. FSD-архитектура для масштабирования.`,stack:[`Next.js 14`,`TypeScript`,`FSD`,`styled-components`,`Redux Toolkit`,`TanStack Query`,`NextAuth`,`Vitest`,`Framer Motion`,`ESLint`,`Prettier`],kind:`pet`,githubUrl:`https://github.com/rmxway/react-notes`,demoUrl:`https://react-notes-service.vercel.app`,accent:`indigo`,previewImage:`./img/notes.jpg`},{id:`itguru-test`,title:`Products table`,subtitle:`Тестовое задание от itGuru`,description:`Авторизация DummyJSON, таблица товаров с пагинацией, поиск, сортировка, оптимистичное добавление в кэш React Query. React Hook Form + Yup: валидация форм с обработкой ошибок и состояний загрузки`,info:`login: emilys, password: emilyspass`,stack:[`React 19`,`TypeScript`,`Vite 7`,`TanStack Query`,`axios`,`React Hook Form`,`Yup`],kind:`test`,githubUrl:`https://github.com/rmxway/itguru-test`,demoUrl:`https://rmxway.github.io/itguru-test/`,accent:`sky`,previewImage:`./img/itguru.jpg`},{id:`sokolinayaohota`,title:`Соколиная охота`,subtitle:`Сайт ресторана`,description:`Вариант сайта ресторана на Next.js. Главная страница в виде лендинга, галерея, залы с описанием и бронированием, контакты.`,stack:[`Next.js 16`,`React 19`,`styled-components`,`Framer Motion`,`Storybook`,`Docker`,`Prettier`],kind:`commercial`,githubUrl:`https://github.com/rmxway/sokolinayaohota`,demoUrl:`https://sokolinayaohota.vercel.app/`,accent:`amber`,previewImage:`./img/sokol.jpg`},{id:`askona`,title:`Askona`,subtitle:`Аскона Тех — разработка и поддержка сайта`,description:`Каталог, фильтры, карточка товара, подборщики, UI Kit, менторинг фронтенда, Agile/Scrum и ускорение загрузки страниц.`,stack:[`React`,`TypeScript`,`UI Kit`,`Адаптивная вёрстка`],kind:`commercial`,demoUrl:`https://www.askona.ru/`,accent:`cyan`,previewImage:`./img/askona.jpg`},{id:`zoloto585`,title:`Золото 585`,subtitle:`Холдинг 585 — ювелирный ритейл`,description:`От вёрстки до React: формы с валидацией, каталоги, карточки товаров, рефакторинг и оптимизация скорости загрузки.`,stack:[`React`,`Webpack`,`SCSS`,`Формы и валидация`],kind:`commercial`,demoUrl:`https://zoloto585.ru/`,accent:`yellow`,previewImage:`./img/gold.jpg`}],ot=v(d.article)`
     ${({theme:e,$reversed:t})=>y`
+        position: relative;
         display: grid;
         gap: ${e.space[6]};
-        align-items: center;
         grid-template-columns: 1fr;
+        background-color: #fff;
+        z-index: 100;
+        padding: ${e.space[5]};
+        border-radius: ${e.radii.xl};
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
 
-        ${S.greaterThan(`md`)`
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-      gap: ${e.space[6]};
+        ${S.greaterThan(`lg`)`
+            grid-template-columns: minmax(0, 1fr) minmax(100px, 300px);
+            gap: ${e.space[6]};
+            padding: calc(${e.space[6]} * 2);
 
-      ${t&&y`
-              > *:first-child {
-                  order: 2;
-              }
+            ${t&&y`
+                    > *:first-child {
+                        order: 2;
+                    }
 
-              > *:last-child {
-                  order: 1;
-              }
-          `}
-    `}
+                    > *:last-child {
+                        order: 1;
+                    }
+                `}
+        `}
     `}
 `,Q=v(d.div)`
     ${({theme:e})=>y`
@@ -635,8 +640,9 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
         box-shadow: ${e.shadows.md};
         border: 1px solid ${e.colors.glassBorder};
 
-        ${S.lessThan(`md`)`
+        ${S.lessThan(`lg`)`
             margin-inline: auto;
+            aspect-ratio: 6/4;
         `}
 
         &::before {
@@ -665,7 +671,7 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
         user-select: none;
         pointer-events: none;
     `}
-`;function pt(e){if(e===`pet`)return`Pet-проект`;if(e===`freelance`)return`Фриланс / продукт`;if(e===`test`)return`Тестовое задание`;if(e===`commercial`)return`Коммерческий проект`}function mt({project:e,preview:t,headingId:n,reversed:r=!1}){return(0,w.jsxs)(ot,{$reversed:r,variants:k,initial:`hidden`,whileInView:`visible`,viewport:{once:!0,margin:`-100px`},children:[(0,w.jsxs)(Q,{variants:A,children:[(0,w.jsx)(ut,{children:pt(e.kind)}),(0,w.jsx)(L,{id:n,children:e.title}),(0,w.jsx)(R,{as:`p`,children:e.subtitle}),(0,w.jsx)(z,{children:e.description}),(0,w.jsx)(`span`,{children:e.info}),(0,w.jsx)(st,{children:e.stack.map(e=>(0,w.jsx)(ct,{children:e},e))}),(0,w.jsxs)(lt,{children:[e.demoUrl?(0,w.jsxs)(K,{href:e.demoUrl,target:`_blank`,rel:`noopener noreferrer`,children:[(0,w.jsx)(U,{icon:se.faArrowUpRightFromSquare,pixels:18,"aria-hidden":!0}),`Посмотреть`]}):null,e.githubUrl?(0,w.jsxs)(K,{href:e.githubUrl,target:`_blank`,rel:`noopener noreferrer`,variant:`secondary`,children:[(0,w.jsx)(U,{icon:_e.faGithub,pixels:18,"aria-hidden":!0}),`GitHub`]}):null]})]}),(0,w.jsx)(Q,{variants:A,children:t})]})}function ht({accent:e,demoUrl:t,imageSrc:n,className:r}){let i=M[e];return(0,w.jsx)(dt,{href:t??``,target:`_blank`,rel:`noopener noreferrer`,className:r,$accent:i,initial:`hidden`,whileInView:`visible`,viewport:{once:!0,margin:`-60px`},variants:j,"aria-hidden":!0,children:n?(0,w.jsx)(ft,{src:n,alt:``}):null})}var gt=v.div`
+`;function pt(e){if(e===`pet`)return`Pet-проект`;if(e===`freelance`)return`Фриланс / продукт`;if(e===`test`)return`Тестовое задание`;if(e===`commercial`)return`Коммерческий проект`}function mt({project:e,preview:t,headingId:n,reversed:r=!1}){return(0,w.jsxs)(ot,{$reversed:r,variants:k,initial:`hidden`,whileInView:`visible`,viewport:{once:!0,margin:`-300px`},children:[(0,w.jsxs)(Q,{variants:A,children:[(0,w.jsx)(ut,{children:pt(e.kind)}),(0,w.jsx)(L,{id:n,children:e.title}),(0,w.jsx)(R,{as:`p`,children:e.subtitle}),(0,w.jsx)(z,{children:e.description}),(0,w.jsx)(`span`,{children:e.info}),(0,w.jsx)(st,{children:e.stack.map(e=>(0,w.jsx)(ct,{children:e},e))}),(0,w.jsxs)(lt,{children:[e.demoUrl?(0,w.jsxs)(K,{href:e.demoUrl,target:`_blank`,rel:`noopener noreferrer`,children:[(0,w.jsx)(U,{icon:se.faArrowUpRightFromSquare,pixels:18,"aria-hidden":!0}),`Посмотреть`]}):null,e.githubUrl?(0,w.jsxs)(K,{href:e.githubUrl,target:`_blank`,rel:`noopener noreferrer`,variant:`secondary`,children:[(0,w.jsx)(U,{icon:_e.faGithub,pixels:18,"aria-hidden":!0}),`GitHub`]}):null]})]}),(0,w.jsx)(Q,{variants:A,children:t})]})}function ht({accent:e,demoUrl:t,imageSrc:n,className:r}){let i=M[e];return(0,w.jsx)(dt,{href:t??``,target:`_blank`,rel:`noopener noreferrer`,className:r,$accent:i,initial:`hidden`,whileInView:`visible`,viewport:{once:!0,margin:`-60px`},variants:j,"aria-hidden":!0,children:n?(0,w.jsx)(ft,{src:n,alt:``}):null})}var gt=v.div`
     ${({theme:e})=>y`
         background: ${e.colors.backgroundSecondary};
         border-top: 1px solid ${e.colors.glassBorder};
@@ -678,24 +684,36 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
         background-color: ${e.colors.background};
     `}
 `,vt=v.div`
-    ${({theme:e})=>y`
-        min-height: 100vh;
+    ${({theme:e,$img:t})=>y`
+        position: relative;
         min-height: 100svh;
         display: flex;
         align-items: center;
         padding: ${e.space[6]} 0;
         border-top: 1px solid ${e.colors.glassBorder};
         background: ${e.colors.gray50};
+        ${t&&t.length>0&&y`
+                background-image: url(${t});
+                background-size: cover;
+                background-position: top center;
+            `}
 
-        &:nth-of-type(even) {
-            background: ${e.colors.gray100};
+        &:before {
+            content: '';
+            background-image: linear-gradient(180deg, #0004, #fff);
+            position: absolute;
+            inset: -1px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 0;
         }
 
-        ${S.lessThan(`md`)`
-      padding: ${e.space[5]} 0;
+        ${S.lessThan(`lg`)`
+            padding: ${e.space[5]} 0;
+            min-height: auto;
+        `}
     `}
-    `}
-`;function yt(){return(0,w.jsxs)(gt,{id:`projects`,children:[(0,w.jsx)(_t,{children:(0,w.jsx)(D,{children:(0,w.jsxs)(V,{id:`projects-intro`,children:[(0,w.jsx)(L,{children:(0,w.jsxs)(I,{as:`span`,$inline:!0,$alignItems:`center`,$gap:2,children:[(0,w.jsx)(U,{icon:le.faDiagramProject,pixels:18,"aria-hidden":!0}),`Проекты`]})}),(0,w.jsx)(z,{children:`От свежих pet-проектов и продуктовой разработки до крупного e-commerce.`})]})})}),at.map((e,t)=>(0,w.jsx)(vt,{"aria-labelledby":`project-${e.id}-title`,children:(0,w.jsx)(D,{children:(0,w.jsx)(mt,{project:e,headingId:`project-${e.id}-title`,reversed:t%2==1,preview:(0,w.jsx)(ht,{accent:e.accent,title:e.title,imageSrc:e.previewImage,demoUrl:e.demoUrl})})})},e.id))]})}var $=[{id:`core`,title:`Основной стек`,items:[`React`,`TypeScript`,`Next.js`,`JavaScript`,`HTML5`,`CSS3`]},{id:`state`,title:`Состояние и данные`,items:[`Redux Toolkit`,`TanStack Query`,`MobX`,`GraphQL`,`REST API`]},{id:`style`,title:`Стили и UI`,items:[`Styled-components`,`SCSS`,`Адаптивная вёрстка`,`Кроссбраузерная вёрстка`,`Figma`]},{id:`quality`,title:`Качество и инструменты`,items:[`Jest`,`React Testing Library`,`ESLint`,`Storybook`,`Git`,`Webpack`,`Vite`,`Docker`,`CI/CD`]},{id:`process`,title:`Процессы`,items:[`Jira`,`Agile/Scrum`,`Code review`,`Postman`,`AI-ассистенты (Cursor)`]}],bt=v.span`
+`;function yt(){return(0,w.jsxs)(gt,{id:`projects`,children:[(0,w.jsx)(_t,{children:(0,w.jsx)(D,{children:(0,w.jsxs)(V,{id:`projects-intro`,children:[(0,w.jsx)(L,{children:(0,w.jsxs)(I,{as:`span`,$inline:!0,$alignItems:`center`,$gap:2,children:[(0,w.jsx)(U,{icon:le.faDiagramProject,pixels:18,"aria-hidden":!0}),`Проекты`]})}),(0,w.jsx)(z,{children:`От свежих pet-проектов и продуктовой разработки до крупного e-commerce.`})]})})}),at.map(e=>(0,w.jsx)(vt,{"aria-labelledby":`project-${e.id}-title`,$img:e.previewImage,children:(0,w.jsx)(D,{children:(0,w.jsx)(mt,{project:e,headingId:`project-${e.id}-title`,preview:(0,w.jsx)(ht,{accent:e.accent,title:e.title,imageSrc:e.previewImage,demoUrl:e.demoUrl})})})},e.id))]})}var $=[{id:`core`,title:`Основной стек`,items:[`React`,`TypeScript`,`Next.js`,`JavaScript`,`HTML5`,`CSS3`]},{id:`state`,title:`Состояние и данные`,items:[`Redux Toolkit`,`TanStack Query`,`MobX`,`GraphQL`,`REST API`]},{id:`style`,title:`Стили и UI`,items:[`Styled-components`,`SCSS`,`Адаптивная вёрстка`,`Кроссбраузерная вёрстка`,`Figma`]},{id:`quality`,title:`Качество и инструменты`,items:[`Jest`,`React Testing Library`,`ESLint`,`Storybook`,`Git`,`Webpack`,`Vite`,`Docker`,`CI/CD`]},{id:`process`,title:`Процессы`,items:[`Jira`,`Agile/Scrum`,`Code review`,`Postman`,`AI-ассистенты (Cursor)`]}],bt=v.span`
     ${({theme:e})=>y`
         display: inline-flex;
         align-items: center;
