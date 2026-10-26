@@ -1,9 +1,9 @@
-import { SkillBadgeRoot } from "../styled";
+import { SkillBadgeRoot } from '../styled';
 
 type SkillBadgeProps = {
-  label: string;
+    label: string;
 };
 
 export function SkillBadge({ label }: SkillBadgeProps) {
-  return <SkillBadgeRoot>{label}</SkillBadgeRoot>;
+    return <SkillBadgeRoot>{label}</SkillBadgeRoot>;
 }

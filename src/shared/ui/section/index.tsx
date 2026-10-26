@@ -1,14 +1,12 @@
-"use client";
-
-import { fadeInUp } from "@/shared/lib/animations";
-import { MotionSection } from "./styled";
+import { fadeInUp } from '@/shared/lib/animations';
+import { MotionSection } from './styled';
 
 type SectionProps = {
-  /** Контент секции. */
-  children: React.ReactNode;
-  className?: string;
-  /** Якорь для навигации и `aria-labelledby`. */
-  id?: string;
+    /** Контент секции. */
+    children: React.ReactNode;
+    className?: string;
+    /** Якорь для навигации и `aria-labelledby`. */
+    id?: string;
 };
 
 /**
@@ -16,16 +14,9 @@ type SectionProps = {
  * Обертка над `motion.section`: единый viewport и варианты из `fadeInUp`.
  */
 export function Section({ children, className, id }: SectionProps) {
-  return (
-    <MotionSection
-      id={id}
-      className={className}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-80px" }}
-      variants={fadeInUp}
-    >
-      {children}
-    </MotionSection>
-  );
+    return (
+        <MotionSection id={id} className={className} initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-80px' }} variants={fadeInUp}>
+            {children}
+        </MotionSection>
+    );
 }
