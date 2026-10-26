@@ -13,4 +13,19 @@ export default defineConfig({
             '@': path.resolve(import.meta.dirname, './src'),
         },
     },
+    build: {
+        rolldownOptions: {
+            output: {
+                codeSplitting: {
+                    maxSize: 1000000,
+                    groups: [
+                        {
+                            name: 'vendor',
+                            test: /node_modules/,
+                        },
+                    ],
+                },
+            },
+        },
+    },
 });
