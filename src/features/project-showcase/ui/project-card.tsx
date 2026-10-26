@@ -22,7 +22,7 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project, preview, headingId, reversed = false }: ProjectCardProps) {
     return (
-        <ProjectCardRoot $reversed={reversed} variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-100px' }}>
+        <ProjectCardRoot $reversed={reversed} variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-300px' }}>
             <ProjectColumn variants={staggerItem}>
                 <KindLabel>{kindRu(project.kind)}</KindLabel>
                 <Heading2 id={headingId}>

@@ -13,9 +13,9 @@ export const HeroRoot = styled.header`
         overflow: hidden;
         padding: ${theme.space[6]} ${theme.space[3]} ${theme.space[5]};
 
-        ${media.greaterThan('md')`
-      padding: ${theme.space[6]} ${theme.space[4]};
-    `}
+        ${media.greaterThan('lg')`
+            padding: ${theme.space[6]} ${theme.space[4]};
+        `}
     `}
 `;
 
@@ -28,7 +28,6 @@ export const HeroInner = styled(motion.div)`
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         gap: ${theme.space[6]};
     `}
 `;
@@ -40,25 +39,25 @@ export const HeroGrid = styled.div`
         align-items: center;
         gap: ${theme.space[5]};
 
-        ${media.greaterThan('md')`
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: ${theme.space[6]};
-    `}
+        ${media.greaterThan('lg')`
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: ${theme.space[6]};
+        `}
     `}
 `;
 
-export const HeroCopy = styled.div`
+export const HeroText = styled.div`
     ${({ theme }) => css`
         display: flex;
         flex-direction: column;
         gap: ${theme.space[3]};
         text-align: center;
 
-        ${media.greaterThan('md')`
-      text-align: left;
-      align-items: flex-start;
-      gap: ${theme.space[6]};
-    `}
+        ${media.greaterThan('lg')`
+            text-align: left;
+            align-items: flex-start;
+            gap: ${theme.space[6]};
+        `}
     `}
 `;
 
@@ -73,12 +72,12 @@ export const HeroPhotoWrap = styled(motion.div)`
         border: 1px solid ${theme.colors.glassBorder};
         box-shadow: ${theme.shadows.md};
 
-        ${media.greaterThan('md')`
-      order: 0;
-      justify-self: end;
-      width: min(30vw, 250px);
-      height: min(30vw, 250px);
-    `}
+        ${media.greaterThan('lg')`
+            order: 0;
+            justify-self: end;
+            width: min(30vw, 250px);
+            height: min(30vw, 250px);
+        `}
     `}
 `;
 
@@ -103,8 +102,8 @@ export const HeroActions = styled.div`
         gap: ${theme.space[2]};
         margin-top: ${theme.space[2]};
 
-        ${media.greaterThan('md')`
-      justify-content: flex-start;
-    `}
+        ${media.greaterThan('lg')`
+            justify-content: flex-start;
+        `}
     `}
 `;

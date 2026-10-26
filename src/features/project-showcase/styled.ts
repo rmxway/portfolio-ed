@@ -5,28 +5,34 @@ import { Lead } from '@/shared/ui';
 
 export const ProjectCardRoot = styled(motion.article)<{ $reversed?: boolean }>`
     ${({ theme, $reversed }) => css`
+        position: relative;
         display: grid;
         gap: ${theme.space[6]};
-        align-items: center;
         grid-template-columns: 1fr;
+        background-color: #fff;
+        z-index: 100;
+        padding: ${theme.space[5]};
+        border-radius: ${theme.radii.xl};
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
 
-        ${media.greaterThan('md')`
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-      gap: ${theme.space[6]};
+        ${media.greaterThan('lg')`
+            grid-template-columns: minmax(0, 1fr) minmax(100px, 300px);
+            gap: ${theme.space[6]};
+            padding: calc(${theme.space[6]} * 2);
 
-      ${
-          $reversed &&
-          css`
-              > *:first-child {
-                  order: 2;
-              }
+            ${
+                $reversed &&
+                css`
+                    > *:first-child {
+                        order: 2;
+                    }
 
-              > *:last-child {
-                  order: 1;
-              }
-          `
-      }
-    `}
+                    > *:last-child {
+                        order: 1;
+                    }
+                `
+            }
+        `}
     `}
 `;
 
@@ -94,8 +100,9 @@ export const PreviewFrame = styled(motion.a)<{ $accent: string }>`
         box-shadow: ${theme.shadows.md};
         border: 1px solid ${theme.colors.glassBorder};
 
-        ${media.lessThan('md')`
+        ${media.lessThan('lg')`
             margin-inline: auto;
+            aspect-ratio: 6/4;
         `}
 
         &::before {

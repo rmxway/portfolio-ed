@@ -6,7 +6,7 @@ import { FaIcon } from '@/shared/ui/fa-icon';
 import { GradientBackground } from '@/shared/ui/gradient-background';
 import { Eyebrow, Heading1, Lead } from '@/shared/ui/text';
 import { staggerContainer, staggerItem } from '@/shared/lib/animations';
-import { HeroActions, HeroCopy, HeroGrid, HeroInner, HeroPhoto, HeroPhotoWrap, HeroRoot, HeroSurface } from './styled';
+import { HeroActions, HeroText, HeroGrid, HeroInner, HeroPhoto, HeroPhotoWrap, HeroRoot, HeroSurface } from './styled';
 
 export function HeroSection() {
     return (
@@ -16,7 +16,7 @@ export function HeroSection() {
                 <Container>
                     <HeroInner variants={staggerContainer} initial="hidden" animate="visible">
                         <HeroGrid>
-                            <HeroCopy>
+                            <HeroText>
                                 <motion.div variants={staggerItem}>
                                     <Eyebrow>Frontend-разработчик</Eyebrow>
                                 </motion.div>
@@ -46,7 +46,7 @@ export function HeroSection() {
                                         </Button>
                                     </HeroActions>
                                 </motion.div>
-                            </HeroCopy>
+                            </HeroText>
                             <HeroPhotoWrap variants={staggerItem}>
                                 <HeroPhoto src="./img/resume2.jpg" alt="Довгань Евгений" />
                             </HeroPhotoWrap>

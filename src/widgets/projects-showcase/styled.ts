@@ -17,22 +17,38 @@ export const ProjectsIntro = styled.div`
     `}
 `;
 
-export const ProjectSlide = styled.div`
-    ${({ theme }) => css`
-        min-height: 100vh;
+export const ProjectSlide = styled.div<{ $img?: string }>`
+    ${({ theme, $img }) => css`
+        position: relative;
         min-height: 100svh;
         display: flex;
         align-items: center;
         padding: ${theme.space[6]} 0;
         border-top: 1px solid ${theme.colors.glassBorder};
         background: ${theme.colors.gray50};
-
-        &:nth-of-type(even) {
-            background: ${theme.colors.gray100};
+        ${
+            $img &&
+            $img.length > 0 &&
+            css`
+                background-image: url(${$img});
+                background-size: cover;
+                background-position: top center;
+            `
         }
 
-        ${media.lessThan('md')`
-      padding: ${theme.space[5]} 0;
-    `}
+        &:before {
+            content: '';
+            background-image: linear-gradient(180deg, #0004, #fff);
+            position: absolute;
+            inset: -1px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 0;
+        }
+
+        ${media.lessThan('lg')`
+            padding: ${theme.space[5]} 0;
+            min-height: auto;
+        `}
     `}
 `;

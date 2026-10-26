@@ -4,7 +4,7 @@
 
 ## Структура проекта
 
-Слои [FSD](https://feature-sliced.design/) (сверху вниз по зависимостям): `views` → `widgets` → `features` → `entities` → `shared`.
+Слои [FSD](https://feature-sliced.design/) (сверху вниз по зависимостям): `pages` → `widgets` → `features` → `entities` → `shared`.
 
 ```
 src/
@@ -48,13 +48,12 @@ src/
 
 **Font Awesome**
 
-- CSS: [`app/layout.tsx`](app/layout.tsx) → `@fortawesome/fontawesome-svg-core/styles`
 - `config.autoAddCss = false` → [`src/shared/lib/fontawesome.ts`](src/shared/lib/fontawesome.ts) (реэкспорт иконок из [`fontawesome-icons.ts`](src/shared/lib/fontawesome-icons.ts))
 - Обёртка: [`FaIcon`](src/shared/ui/fa-icon/index.tsx) — проп `size` как в FA (`"sm"`, `"lg"`, `"1x"` …), опционально `pixels` (px)
 
 Превью проектов: фоновый glow и опциональные изображения из [`public/img`](public/img).
 
-## Запуск
+## Запуск dev сервера
 
 ```bash
 yarn dev
@@ -65,8 +64,13 @@ yarn dev
 ## Сборка
 
 ```bash
-yarn build
-yarn start
+yarn build # Сборка проекта в папку dist
+yarn start # Запуск локального сервера сборки из папки dist
+```
+## Деплой на github pages
+
+```bash
+yarn deploy # Важно! Перед этим необходимо собрать проект через yarn build
 ```
 
 ## Качество кода

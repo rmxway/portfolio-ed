@@ -24,13 +24,12 @@ export function ProjectsSection() {
                     </Section>
                 </Container>
             </ProjectsIntro>
-            {projects.map((project, index) => (
-                <ProjectSlide key={project.id} aria-labelledby={`project-${project.id}-title`}>
+            {projects.map((project) => (
+                <ProjectSlide key={project.id} aria-labelledby={`project-${project.id}-title`} $img={project.previewImage}>
                     <Container>
                         <ProjectCard
                             project={project}
                             headingId={`project-${project.id}-title`}
-                            reversed={index % 2 === 1}
                             preview={<ProjectPreview accent={project.accent} title={project.title} imageSrc={project.previewImage} demoUrl={project.demoUrl} />}
                         />
                     </Container>
