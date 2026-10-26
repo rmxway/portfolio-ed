@@ -1,18 +1,14 @@
 # Лендинг
 
-Портфолио на Next.js: hero, навыки, опыт, контакты. Данные лежат в [`src/entities`](src/entities).
+Портфолио на Vite / React: hero, навыки, опыт, контакты. Данные лежат в [`src/entities`](src/entities).
 
 ## Структура проекта
 
 Слои [FSD](https://feature-sliced.design/) (сверху вниз по зависимостям): `views` → `widgets` → `features` → `entities` → `shared`.
 
 ```
-app/                              # Next.js App Router
-├── layout.tsx                    # корень: провайдеры, шрифты Geist, глобальные стили, Font Awesome CSS
-└── page.tsx                      # главная → подключает view
-
 src/
-├── views/                        # композиция страниц (не путать с Pages Router)
+├── pages/                        # композиция страниц
 │   └── home/ui/home-page.tsx
 ├── widgets/                      # крупные секции лендинга
 │   ├── hero/                     # первый экран, фон и фото
@@ -36,15 +32,13 @@ src/
 └── types/                        # theme.ts, entities.ts, styled.d.ts
 ```
 
-Корень репозитория: `next.config.ts`, `package.json`, `eslint.config.mjs`, `tsconfig.json`.
-
-> В Next.js нельзя использовать папку `src/pages` вместе с корневым `app/` (зарезервировано под Pages Router), поэтому слой композиции страниц — **`src/views`**.
+Корень репозитория: `vite.config.ts`, `package.json`, `eslint.config.js`, `tsconfig.json`.
 
 ## Стек
 
 | Направление | Что используется |
 |-------------|------------------|
-| Проект | Next.js 16 (App Router), React 19, Yarn 4 |
+| Проект | React 19, Yarn 4 |
 | Стили | **styled-components** (`styled.ts` рядом с компонентами), **styled-media-query** |
 | Тема, брейкпоинты | [`src/theme`](src/theme) |
 | Типы сущностей | [`src/types/entities.ts`](src/types/entities.ts) |
@@ -66,7 +60,7 @@ src/
 yarn dev
 ```
 
-Откройте [http://localhost:3000](http://localhost:3000).
+Откройте [http://localhost:5173/portfolio-ed/](http://localhost:5173/portfolio-ed/).
 
 ## Сборка
 
@@ -82,4 +76,4 @@ yarn lint
 yarn format
 ```
 
-`format` — Prettier для `src/**` и `app/**` (`*.ts`, `*.tsx`).
+`format` — Prettier для `src/**` и (`*.ts`, `*.tsx`).

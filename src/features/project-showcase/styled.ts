@@ -7,7 +7,7 @@ export const ProjectCardRoot = styled(motion.article)<{ $reversed?: boolean }>`
     ${({ theme, $reversed }) => css`
         display: grid;
         gap: ${theme.space[6]};
-        // align-items: center;
+        align-items: center;
         grid-template-columns: 1fr;
 
         ${media.greaterThan('md')`
@@ -111,12 +111,12 @@ export const PreviewFrame = styled(motion.a)<{ $accent: string }>`
 export const PreviewImage = styled.img`
     ${({ theme }) => css`
         position: absolute;
-        width: calc(100% - 40px);
-        height: calc(100% - 40px);
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
         border-radius: ${theme.radii.lg};
         border: 1px solid ${theme.colors.glassBorder};
         background: ${theme.colors.glassBackground};
-        margin: 20px;
+        margin: 10px;
         object-fit: cover;
         object-position: top center;
         -webkit-user-drag: none;

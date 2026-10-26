@@ -1,5 +1,5 @@
-import { AppProviders } from './shared/providers';
-import { HomePage } from './views/home/ui/HomePage';
+import { AppProviders } from '@/shared/providers';
+import { HomePage } from '@/pages/home/ui/HomePage';
 
 export const App = () => {
     return (

@@ -20,11 +20,10 @@
         ],
         "paths": {
             "@/*": ["./src/*"],
-            "@/theme": ["./src/theme/index.ts"],
             "@/theme/*": ["./src/theme/*"],
             "@/types/*": ["./src/types/*"],
             "@/shared/*": ["./src/shared/*"],
-            "@/views/*": ["./src/views/*"],
+            "@/pages/*": ["./src/pages/*"],
             "@/widgets/*": ["./src/widgets/*"],
             "@/features/*": ["./src/features/*"],
             "@/entities/*": ["./src/entities/*"]

@@ -11,7 +11,7 @@ export const tokens: Omit<AppTheme, 'breakpoints'> = {
         accent: '#0071e3',
         accentHover: '#0077ed',
         success: '#34c759',
-        glassBorder: 'rgba(0, 0, 0, 0.08)',
+        glassBorder: 'rgba(0, 0, 0, 0.12)',
         glassBackground: 'rgba(255, 255, 255, 0.72)',
         gray50: '#fafafa',
         gray100: '#f5f5f5',
