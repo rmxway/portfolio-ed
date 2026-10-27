@@ -59,6 +59,10 @@ export const Lead = styled.p`
         &:last-child {
             margin-bottom: 0;
         }
+
+        span {
+            display: inline-block;
+        }
     `}
 `;
 

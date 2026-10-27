@@ -20,7 +20,7 @@ export function ProjectsSection() {
                                 Проекты
                             </Flex>
                         </Heading2>
-                        <Lead>От свежих pet-проектов и продуктовой разработки до крупного e-commerce.</Lead>
+                        <Lead>От свежих pet-проектов и продуктовой разработки до крупного <span>e-commerce</span>.</Lead>
                     </Section>
                 </Container>
             </ProjectsIntro>

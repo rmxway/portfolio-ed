@@ -1,11 +1,7 @@
-import { motion } from 'framer-motion';
 import type { ExperienceItem } from '@/types/entities';
 import { Heading3 } from '@/shared/ui/text';
-import { fadeInUp } from '@/shared/lib/animations';
 import { Card, ExperienceDesc, ExperienceHighlights, ExperienceMeta, ExperienceRoleLine } from '../styled';
 import { formatExperienceDurationText } from '../lib/experience-duration';
-
-const MotionCard = motion.create(Card);
 
 type ExperienceCardProps = {
     item: ExperienceItem;
@@ -15,7 +11,7 @@ export function ExperienceCard({ item }: ExperienceCardProps) {
     const durationText = formatExperienceDurationText(item.start, item.end);
 
     return (
-        <MotionCard variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-80px' }}>
+        <Card>
             <ExperienceMeta>
                 {item.period} ( {durationText} )
             </ExperienceMeta>
@@ -30,6 +26,6 @@ export function ExperienceCard({ item }: ExperienceCardProps) {
                     <li key={line}>{line}</li>
                 ))}
             </ExperienceHighlights>
-        </MotionCard>
+        </Card>
     );
 }

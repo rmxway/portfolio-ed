@@ -5,16 +5,15 @@ import { motion } from 'framer-motion';
 export const HeroRoot = styled.header`
     ${({ theme }) => css`
         position: relative;
-        min-height: 100vh;
-        min-height: 100svh;
         display: flex;
         align-items: center;
         justify-content: center;
         overflow: hidden;
-        padding: ${theme.space[6]} ${theme.space[3]} ${theme.space[5]};
+        padding: ${theme.space[6]} ${theme.space[3]};
 
         ${media.greaterThan('lg')`
             padding: ${theme.space[6]} ${theme.space[4]};
+            min-height: 100svh;
         `}
     `}
 `;

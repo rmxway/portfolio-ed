@@ -11,7 +11,7 @@ export const ProjectsRoot = styled.div`
 
 export const ProjectsIntro = styled.div`
     ${({ theme }) => css`
-        padding: 6rem 0;
+        padding: ${theme.space[6]} 0;
         text-align: center;
         background-color: ${theme.colors.background};
     `}

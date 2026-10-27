@@ -42,7 +42,7 @@ export function FooterSection() {
                                     </ContactLink>
                                 </ContactCard>
                                 <ContactCard>
-                                    <ContactLink href="">
+                                    <ContactLink>
                                         <ContactCardHeader>
                                             <FaIcon icon={faLocationDot} pixels={size} aria-hidden />
                                         </ContactCardHeader>

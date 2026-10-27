@@ -11,7 +11,7 @@ import { HeroActions, HeroText, HeroGrid, HeroInner, HeroPhoto, HeroPhotoWrap, H
 export function HeroSection() {
     return (
         <HeroRoot id="top">
-            <GradientBackground accent="blue" angle={130} />
+            <GradientBackground accent="purple" angle={130} />
             <HeroSurface>
                 <Container>
                     <HeroInner variants={staggerContainer} initial="hidden" animate="visible">

@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import { media } from '@/theme/media';
 import { Body } from '@/shared/ui/text';
+import { motion } from 'framer-motion';
 
 export const ExperienceRoot = styled.section`
     ${({ theme }) => css`
@@ -23,36 +24,38 @@ export const Timeline = styled.ol`
         position: relative;
 
         ${media.greaterThan('md')`
-      gap: ${theme.space[5]};
-    `}
+            gap: ${theme.space[5]};
+        `}
     `}
 `;
 
-export const TimelineItem = styled.li`
+export const TimelineItem = styled(motion.li)`
     ${({ theme }) => css`
         position: relative;
-        padding-left: ${theme.space[4]};
 
         &::before {
             content: '';
             position: absolute;
-            left: 0;
-            top: 0.35rem;
-            width: 10px;
-            height: 10px;
+            left: 20px;
+            top: 2rem;
+            width: 8px;
+            height: 8px;
             border-radius: ${theme.radii.full};
-            background: ${theme.colors.accent};
-            box-shadow: 0 0 0 4px ${theme.colors.backgroundSecondary};
+            background: ${theme.colors.gray700};
+            box-shadow: 0 0 0 4px ${theme.colors.glassBorder};
+            z-index: 3;
         }
 
         &:not(:last-child)::after {
             content: '';
             position: absolute;
-            left: 4px;
-            top: 1.25rem;
-            bottom: calc(-1 * ${theme.space[4]} - 4px);
+            left: 23px;
+            top: 2rem;
+            height: calc(100% + ${theme.space[5]});
+            // bottom: calc(-1 * ${theme.space[4]} - 23px);
             width: 2px;
             background: ${theme.colors.glassBorder};
+            z-index: 1;
         }
     `}
 `;
@@ -64,6 +67,8 @@ export const Card = styled.article`
         background: ${theme.colors.background};
         border: 1px solid ${theme.colors.glassBorder};
         box-shadow: ${theme.shadows.sm};
+        padding-left: ${theme.space[6]};
+        z-index: 0;
     `}
 `;
 

@@ -22,7 +22,7 @@ export const SkillCategoryPanel = styled.div`
         gap: ${theme.space[3]};
         padding: ${theme.space[4]};
         border-radius: ${theme.radii.lg};
-        background-color: ${theme.colors.gray100};
+        background-color: ${theme.colors.gray200};
         border: 1px solid ${theme.colors.glassBorder};
         box-shadow: ${theme.shadows.sm};
     `}
