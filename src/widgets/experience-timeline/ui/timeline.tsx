@@ -1,6 +1,5 @@
 import { experienceItems } from '@/entities/experience';
 import { Container } from '@/shared/ui/container';
-import { GradientBackground } from '@/shared/ui/gradient-background';
 import { Flex } from '@/shared/ui/flex';
 import { Heading2, Lead } from '@/shared/ui/text';
 import { Section } from '@/shared/ui/section';
@@ -10,7 +9,6 @@ import { ExperienceIntro, ExperienceRoot, Timeline, TimelineItem } from '../styl
 export function ExperienceTimeline() {
     return (
         <ExperienceRoot id="experience">
-            <GradientBackground accent="purple" angle={0} />
             <Container>
                 <Section>
                     <ExperienceIntro>

@@ -5,7 +5,7 @@ import { Flex } from '@/shared/ui/flex';
 import { Heading2, Lead } from '@/shared/ui/text';
 import { Section } from '@/shared/ui/section';
 import { ProjectSlide, ProjectsIntro, ProjectsRoot } from './styled';
-import { FaIcon } from '@/shared/ui/fa-icon';
+import { FaIcon } from '@/shared/ui';
 import { faDiagramProject } from '@/shared/lib/fontawesome-icons';
 
 export function ProjectsSection() {

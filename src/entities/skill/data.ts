@@ -4,7 +4,7 @@ export const skillCategories: SkillCategory[] = [
     {
         id: 'core',
         title: 'Основной стек',
-        items: ['React', 'TypeScript', 'Next.js', 'JavaScript', 'HTML5', 'CSS3'],
+        items: ['React', 'Next.js', 'TypeScript / JS', 'HTML5', 'CSS3'],
     },
     {
         id: 'state',
@@ -14,16 +14,16 @@ export const skillCategories: SkillCategory[] = [
     {
         id: 'style',
         title: 'Стили и UI',
-        items: ['Styled-components', 'SCSS', 'Адаптивная вёрстка', 'Кроссбраузерная вёрстка', 'Figma'],
+        items: ['Figma', 'Адаптивная вёрстка', 'Styled-components', 'SCSS / LESS', 'CSS Modules', 'Tailwind', 'Bootstrap', 'MUI'],
     },
     {
         id: 'quality',
         title: 'Качество и инструменты',
-        items: ['Jest', 'React Testing Library', 'ESLint', 'Storybook', 'Git', 'Webpack', 'Vite', 'Docker', 'CI/CD'],
+        items: ['Git', 'Vite / Webpack', 'ESLint', 'Prettier', 'Storybook', 'Jest', 'React Testing Library', 'Docker', 'CI/CD'],
     },
     {
         id: 'process',
         title: 'Процессы',
-        items: ['Jira', 'Agile/Scrum', 'Code review', 'Postman', 'AI-ассистенты (Cursor)'],
+        items: ['Jira', 'Agile/Scrum', 'Code Review', 'Postman', 'AI-ассистенты'],
     },
 ];

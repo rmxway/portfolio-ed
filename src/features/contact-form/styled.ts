@@ -4,7 +4,7 @@ export const ContactLinkStyled = styled.a`
     ${({ theme }) => css`
         display: inline-flex;
         align-items: center;
-        min-height: 44px;
+        justify-content: center;
         font-size: 1rem;
         font-weight: 500;
         color: ${theme.colors.accent};

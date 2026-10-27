@@ -2,7 +2,7 @@ import { skillCategories } from '@/entities/skill';
 import { SkillCategoryBlock } from '@/features/skill-grid';
 import { Container } from '@/shared/ui/container';
 import { Flex } from '@/shared/ui/flex';
-import { Heading2, Lead } from '@/shared/ui/text';
+import { Heading2 } from '@/shared/ui/text';
 import { Section } from '@/shared/ui/section';
 import { SkillsGrid, SkillsIntro, SkillsRoot } from './styled';
 
@@ -17,7 +17,6 @@ export function SkillsSection() {
                                 Навыки
                             </Flex>
                         </Heading2>
-                        <Lead>Стек технологий: от React и TypeScript до тестов, Storybook и CI/CD.</Lead>
                     </SkillsIntro>
                     <SkillsGrid>
                         {skillCategories.map((category, i) => (

@@ -1,36 +1,32 @@
-import { faArrowUp, faBriefcase, faClockRotateLeft, faCode, faEnvelope, faLocationDot, faPhone, faTelegram } from '@/shared/lib/fontawesome-icons';
-import { FaIcon } from '@/shared/ui/fa-icon';
+import { faArrowUp, faBriefcase, faClockRotateLeft, faCode, faEnvelope, faLocationDot, faPhone, faTelegramPlane } from '@/shared/lib/fontawesome';
+
+import { FaIcon } from '@/shared/ui';
 import { ContactLink } from '@/features/contact-form';
-import { Container, Heading2, Lead, Section } from '@/shared/ui';
-import { ContactCard, ContactCardHeader, ContactCardHint, ContactCardValue, ContactCardsGrid, FooterGrid, FooterRoot, IntroBlock, LinkRow, NavDivider, NavLinkInner } from './styled';
+import { Container, Section } from '@/shared/ui';
+import { ContactCard, ContactCardHeader, ContactCardHint, ContactCardValue, ContactCardsGrid, FooterGrid, FooterRoot, LinkRow, NavDivider, NavLinkInner } from './styled';
 
 export function FooterSection() {
+    const size = 22;
     return (
         <FooterRoot id="contact">
             <Container>
                 <Section>
-                    <IntroBlock>
-                        <Heading2>Контакты</Heading2>
-                        <Lead>Пишите на почту или в Telegram.</Lead>
-                    </IntroBlock>
                     <FooterGrid>
                         <div>
                             <ContactCardsGrid>
                                 <ContactCard>
                                     <ContactLink href="mailto:rmxway@mail.ru">
                                         <ContactCardHeader>
-                                            <FaIcon icon={faEnvelope} size="2x" aria-hidden />
-                                            Email
+                                            <FaIcon icon={faEnvelope} pixels={size} aria-hidden />
                                         </ContactCardHeader>
-                                        <ContactCardValue>rmxway@mail.ru</ContactCardValue>
+                                        <ContactCardValue>rmxway@yandex.ru</ContactCardValue>
                                         <ContactCardHint>Основной канал для откликов</ContactCardHint>
                                     </ContactLink>
                                 </ContactCard>
                                 <ContactCard>
                                     <ContactLink href="https://t.me/evgenydovgan" target="_blank" rel="noopener noreferrer">
                                         <ContactCardHeader>
-                                            <FaIcon icon={faTelegram} size="2x" aria-hidden />
-                                            Telegram
+                                            <FaIcon icon={faTelegramPlane} pixels={size} aria-hidden />
                                         </ContactCardHeader>
                                         <ContactCardValue>@evgenydovgan</ContactCardValue>
                                         <ContactCardHint>Быстрые вопросы, на связи</ContactCardHint>
@@ -39,8 +35,7 @@ export function FooterSection() {
                                 <ContactCard>
                                     <ContactLink href="tel:+79672295802">
                                         <ContactCardHeader>
-                                            <FaIcon icon={faPhone} size="2x" aria-hidden />
-                                            Телефон
+                                            <FaIcon icon={faPhone} pixels={size} aria-hidden />
                                         </ContactCardHeader>
                                         <ContactCardValue>+7 (967) 229-58-02</ContactCardValue>
                                         <ContactCardHint>До 22:00 по Москве</ContactCardHint>
@@ -49,11 +44,9 @@ export function FooterSection() {
                                 <ContactCard>
                                     <ContactLink href="">
                                         <ContactCardHeader>
-                                            <FaIcon icon={faLocationDot} size="2x" aria-hidden />
-                                            Локация
+                                            <FaIcon icon={faLocationDot} pixels={size} aria-hidden />
                                         </ContactCardHeader>
                                         <ContactCardValue>Россия, Москва</ContactCardValue>
-                                        <ContactCardHint>ЮАО</ContactCardHint>
                                     </ContactLink>
                                 </ContactCard>
                             </ContactCardsGrid>

@@ -14,7 +14,7 @@ export type FaIconProps = FontAwesomeIconProps & {
 };
 
 /** Обёртка над `FontAwesomeIcon` с поддержкой `pixels` для фиксированного размера в px. */
-export const FaIcon = forwardRef<SVGSVGElement, FaIconProps>(function FaIcon({ pixels, style, ...rest }, ref) {
+export const FaIcon = forwardRef<SVGSVGElement, FaIconProps>(function FaIcon({ pixels = 18, style, ...rest }, ref) {
     const mergedStyle =
         pixels !== undefined
             ? {

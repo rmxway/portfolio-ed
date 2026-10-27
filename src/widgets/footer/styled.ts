@@ -1,12 +1,12 @@
 import styled, { css } from 'styled-components';
-import { Body, Lead } from '@/shared/ui/text';
+import { Body, Heading2, Lead } from '@/shared/ui/text';
+import { media } from '@/theme';
 
 export const FooterRoot = styled.footer`
     ${({ theme }) => css`
         position: relative;
-        padding: ${theme.space[6]} 0 ${theme.space[5]};
-        background: linear-gradient(180deg, ${theme.colors.gray50} 0%, ${theme.colors.background} 100%);
-        border-top: 1px solid ${theme.colors.glassBorder};
+        padding: ${theme.space[4]} 0 ${theme.space[5]};
+        background: linear-gradient(180deg, ${theme.colors.gray600} 0%, ${theme.colors.gray800} 100%);
     `}
 `;
 
@@ -14,9 +14,7 @@ export const FooterGrid = styled.div`
     ${({ theme }) => css`
         display: grid;
         gap: ${theme.space[5]};
-
         margin-top: ${theme.space[5]};
-
         @media (min-width: 768px) {
             grid-template-columns: 2fr;
             align-items: start;
@@ -28,11 +26,12 @@ export const IntroBlock = styled.div`
     ${({ theme }) => css`
         display: flex;
         flex-direction: column;
-        gap: ${theme.space[3]};
-        max-width: 28rem;
+        justify-content: center;
+        align-items: center;
 
-        ${Lead} {
+        ${Lead}, ${Heading2} {
             margin: 0;
+            color: ${theme.colors.gray200};
         }
     `}
 `;
@@ -40,7 +39,7 @@ export const IntroBlock = styled.div`
 export const ContactLabel = styled(Body)`
     ${({ theme }) => css`
         font-weight: 600;
-        color: ${theme.colors.text};
+        color: ${theme.colors.gray200};
         margin: 0 0 ${theme.space[2]};
     `}
 `;
@@ -52,9 +51,10 @@ export const ContactCardsGrid = styled.ul`
         padding: 0;
         display: grid;
         gap: ${theme.space[3]};
+        grid-template-columns: 1fr;
 
         @media (min-width: 480px) {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-columns: repeat(2, minmax(50px, 1fr));
         }
     `}
 `;
@@ -63,8 +63,10 @@ export const ContactCard = styled.li`
     ${({ theme }) => css`
         border-radius: ${theme.radii.lg};
         border: 1px solid ${theme.colors.glassBorder};
-        background: ${theme.colors.background};
+        background-color: ${theme.colors.gray700};
         box-shadow: ${theme.shadows.sm};
+        min-height: 130px;
+        text-align: center;
         transition:
             box-shadow 0.25s ease,
             transform 0.25s ease,
@@ -73,7 +75,7 @@ export const ContactCard = styled.li`
         &:hover {
             box-shadow: ${theme.shadows.md};
             transform: translateY(-2px);
-            border-color: ${theme.colors.gray300};
+            border-color: ${theme.colors.gray600};
         }
 
         a {
@@ -98,7 +100,7 @@ export const ContactCardHeader = styled.span`
         font-weight: 600;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: ${theme.colors.textMuted};
+        color: ${theme.colors.gray300};
     `}
 `;
 
@@ -106,7 +108,7 @@ export const ContactCardValue = styled.span`
     ${({ theme }) => css`
         font-size: ${theme.typography.body};
         font-weight: 500;
-        color: ${theme.colors.text};
+        color: ${theme.colors.gray100};
         line-height: 1.4;
         word-break: break-word;
     `}
@@ -115,7 +117,7 @@ export const ContactCardValue = styled.span`
 export const ContactCardHint = styled.span`
     ${({ theme }) => css`
         font-size: 0.8125rem;
-        color: ${theme.colors.textSecondary};
+        color: ${theme.colors.gray400};
         line-height: 1.45;
     `}
 `;
@@ -136,7 +138,7 @@ export const LocationCard = styled.div`
 export const NavDivider = styled.div`
     ${({ theme }) => css`
         height: 1px;
-        background: linear-gradient(90deg, transparent, ${theme.colors.gray300}, transparent);
+        background: linear-gradient(90deg, transparent, ${theme.colors.gray700}, transparent);
         margin: ${theme.space[5]} 0 ${theme.space[3]};
     `}
 `;
@@ -145,8 +147,13 @@ export const LinkRow = styled.div`
     ${({ theme }) => css`
         display: flex;
         flex-wrap: wrap;
-        gap: ${theme.space[2]} ${theme.space[4]};
+        gap: ${theme.space[2]};
         align-items: center;
+        justify-content: center;
+
+        ${media.greaterThan('lg')`
+        gap: ${theme.space[2]} ${theme.space[4]};
+            `}
     `}
 `;
 
@@ -157,5 +164,6 @@ export const NavLinkInner = styled.span`
         gap: ${theme.space[2]};
         font-size: 0.9375rem;
         font-weight: 500;
+        color: ${theme.colors.gray100};
     `}
 `;

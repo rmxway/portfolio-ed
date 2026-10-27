@@ -8,6 +8,7 @@ export const ExperienceRoot = styled.section`
         padding: ${theme.space[6]} 0;
         overflow: hidden;
         border-top: 1px solid ${theme.colors.glassBorder};
+        background-image: radial-gradient(${theme.colors.background} 20%, ${theme.colors.gray400});
     `}
 `;
 
