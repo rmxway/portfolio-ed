@@ -4,16 +4,18 @@ export type ProjectKind = 'pet' | 'commercial' | 'freelance' | 'test';
 
 export type Project = {
     id: string;
-    title: string;
-    subtitle: string;
-    description: string;
+    title?: string;
+    subtitle?: string;
+    description?: string;
     info?: string;
-    stack: string[];
-    kind: ProjectKind;
+    stack?: string[];
+    kind?: ProjectKind;
     githubUrl?: string;
     demoUrl?: string;
-    accent: AccentColorName;
+    accent?: AccentColorName;
     previewImage?: string;
+    loading?: boolean;
+    error?: string;
 };
 
 export type SkillCategory = {

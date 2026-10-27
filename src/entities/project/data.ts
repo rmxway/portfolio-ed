@@ -3,28 +3,9 @@ import type { Project } from '@/types/entities';
 export const projects: Project[] = [
     {
         id: 'diving-center',
-        title: 'Дайвинг-центр',
-        subtitle: 'Итоговый проект обучения на курсе',
-        description: 'Результат обучения на курсе Frontend-разработка и Web-дизайн в РЭУ им Г.В. Плеханова. Проект проектировался в Figma с нуля, после чего был перенесен на React. Разработан с помощью инструментов которые были изучены на курсе.',
-        stack: ['HTML', 'CSS', 'TypeScript', 'React', 'gh-pages', 'Font Awesome', 'ESLint', 'Prettier'],
-        kind: 'pet',
-        githubUrl: 'https://github.com/rmxway/diving-center',
-        demoUrl: 'https://rmxway.github.io/diving-center/',
-        accent: 'blue',
-        previewImage: './img/diving-center.jpg',
     },
     {
         id: 'green-shop',
-        title: 'Green Shop Brand',
-        subtitle: 'Интернет-магазин натуральной продукции',
-        description:
-            'Каталог с поиском и фильтрами, корзина, избранное, сравнение товаров, NextAuth, личный кабинет, заказы в Firestore, тёмная тема, Storybook и тесты. Jest + React Testing Library: тесты ключевых компонентов. Storybook: визуальная документация 12+ компонентов UI-кита. Тёмная тема через styled-components.',
-        stack: ['Next.js 16', 'React 19', 'TypeScript', 'styled-components', 'Redux Toolkit', 'RTK Query', 'Firebase', 'NextAuth', 'Storybook', 'React Testing Library', 'Jest', 'ESLint', 'Prettier'],
-        kind: 'pet',
-        githubUrl: 'https://github.com/rmxway/green-shop',
-        demoUrl: 'https://green-shop-brand.vercel.app/',
-        accent: 'emerald',
-        previewImage: './img/green-shop.jpg',
     },
     {
         id: 'medanketa',

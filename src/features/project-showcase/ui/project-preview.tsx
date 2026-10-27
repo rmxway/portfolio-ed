@@ -3,14 +3,14 @@ import { ACCENT_COLORS, type AccentColorName } from '@/shared/lib';
 import { PreviewFrame, PreviewImage } from '../styled';
 
 type ProjectPreviewProps = {
-    accent: AccentColorName;
-    title: string;
+    accent?: AccentColorName;
+    title?: string;
     imageSrc?: string;
     demoUrl?: string;
     className?: string;
 };
 
-export function ProjectPreview({ accent, demoUrl, imageSrc, className }: ProjectPreviewProps) {
+export function ProjectPreview({ accent = 'amber', demoUrl, imageSrc, className }: ProjectPreviewProps) {
     const accentColor = ACCENT_COLORS[accent];
 
     return (

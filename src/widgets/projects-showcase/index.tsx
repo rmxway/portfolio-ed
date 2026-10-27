@@ -1,5 +1,4 @@
-import { projects } from '@/entities/project';
-import { ProjectCard, ProjectPreview } from '@/features/project-showcase';
+import { ProjectCard } from '@/features/project-showcase';
 import { Container } from '@/shared/ui/container';
 import { Flex } from '@/shared/ui/flex';
 import { Heading2, Lead } from '@/shared/ui/text';
@@ -7,8 +6,26 @@ import { Section } from '@/shared/ui/section';
 import { ProjectSlide, ProjectsIntro, ProjectsRoot } from './styled';
 import { FaIcon } from '@/shared/ui';
 import { faDiagramProject } from '@/shared/lib/fontawesome-icons';
+import { projects as localProjects } from '@/entities/project';
+import { Project } from '@/types/entities';
+import { useState } from 'react';
+import { repoLink } from '@/shared/lib';
 
 export function ProjectsSection() {
+    const [projects, setProjects] = useState(localProjects);
+
+    const updateProject = (data: Project) => {
+        if (data) {
+            setProjects((prev) =>
+                prev.map((item) => {
+                    const previewImage = `${repoLink(data.id)}/public/${data.previewImage}` || '';
+                    const newData: Project = { ...data, previewImage };
+                    return item.id === data.id ? newData : item;
+                }),
+            );
+        }
+    };
+
     return (
         <ProjectsRoot id="projects">
             <ProjectsIntro>
@@ -20,18 +37,16 @@ export function ProjectsSection() {
                                 Проекты
                             </Flex>
                         </Heading2>
-                        <Lead>От свежих pet-проектов и продуктовой разработки до крупного <span>e-commerce</span>.</Lead>
+                        <Lead>
+                            От свежих pet-проектов и продуктовой разработки до крупного <span>e-commerce</span>.
+                        </Lead>
                     </Section>
                 </Container>
             </ProjectsIntro>
             {projects.map((project) => (
                 <ProjectSlide key={project.id} aria-labelledby={`project-${project.id}-title`} $img={project.previewImage}>
                     <Container>
-                        <ProjectCard
-                            project={project}
-                            headingId={`project-${project.id}-title`}
-                            preview={<ProjectPreview accent={project.accent} title={project.title} imageSrc={project.previewImage} demoUrl={project.demoUrl} />}
-                        />
+                        <ProjectCard headingId={`project-${project.id}-title`} {...{ project, updateProject }} />
                     </Container>
                 </ProjectSlide>
             ))}
