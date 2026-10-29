@@ -21,17 +21,22 @@ type ProjectCardProps = {
     project: Project;
     headingId?: string;
     reversed?: boolean;
-    updateProject: (data: Project) => void;
+    updateProject: (data: Project | string) => void;
 };
 
 export const ProjectCard = ({ project, headingId, reversed = false, updateProject }: ProjectCardProps) => {
     const { data, loading, error } = useGetJSON(project.title ? '' : linkToJson(project.id));
 
     useEffect(() => {
-        if (!project.title && !loading && data?.title) {
+        if (!loading && data) {
             updateProject(data);
         }
-    }, [loading, data, project.title, updateProject]);
+
+        if (!loading && error) {
+            updateProject(project.id);
+        }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [loading, project.id, error]);
 
     return (
         <ProjectCardRoot $reversed={reversed} variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-120px' }} key={project.title}>

@@ -14,8 +14,8 @@ import { repoLink } from '@/shared/lib';
 export function ProjectsSection() {
     const [projects, setProjects] = useState(localProjects);
 
-    const updateProject = (data: Project) => {
-        if (data) {
+    const updateProject = (data: Project | string) => {
+        if (typeof data !== 'string') {
             setProjects((prev) =>
                 prev.map((item) => {
                     const previewImage = `${repoLink(data.id)}/public/${data.previewImage}` || '';
@@ -23,6 +23,8 @@ export function ProjectsSection() {
                     return item.id === data.id ? newData : item;
                 }),
             );
+        } else {
+            setProjects((prev) => prev.filter((item) => item.id !== data));
         }
     };
 
