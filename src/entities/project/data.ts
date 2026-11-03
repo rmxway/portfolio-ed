@@ -2,12 +2,6 @@ import type { Project } from '@/types/entities';
 
 export const projects: Project[] = [
     {
-        id: 'diving-center',
-    },
-    {
-        id: 'green-shop',
-    },
-    {
         id: 'medanketa',
         title: 'Medanketa',
         subtitle: 'Медицинские анкеты и аналитика',
@@ -20,21 +14,38 @@ export const projects: Project[] = [
         previewImage: './img/medanketa.jpg',
     },
     {
-        id: 'stories',
-        title: 'Stories',
-        subtitle: 'Виджет историй в духе мессенджеров и соцсетей',
-        description:
-            'Демо виджета историй в стиле соцсетей: превью с кольцом прогресса, полноэкранный просмотр с автопереключением, навигация по тапам и клавиатуре, двухпальцевый zoom активной истории, режим просмотра зрителей и запоминание просмотренных в localStorage. Настроил ESLint/Prettier, написал README с инструкцией по запуску — код готов к передаче в команду.',
-        stack: ['Next.js', 'TypeScript', 'styled-components', 'Framer Motion', 'ESLint', 'Prettier'],
-        kind: 'pet',
-        githubUrl: 'https://github.com/rmxway/stories',
-        demoUrl: 'https://stories-widget.vercel.app/',
-        accent: 'violet',
-        previewImage: './img/stories.jpg',
+        id: 'green-shop',
+    },
+    {
+        id: 'askona',
+        title: 'Askona',
+        subtitle: 'Аскона Тех — разработка и поддержка сайта',
+        description: 'Каталог, фильтры, карточка товара, подборщики, UI Kit, менторинг фронтенда, Agile/Scrum и ускорение загрузки страниц.',
+        stack: ['React', 'TypeScript', 'UI Kit', 'Адаптивная вёрстка'],
+        kind: 'commercial',
+        demoUrl: 'https://www.askona.ru/',
+        accent: 'cyan',
+        previewImage: './img/askona.jpg',
+    },
+    {
+        id: 'diving-center',
     },
     {
         id: 'simpletrading',
     },
+    /* {
+         id: 'stories',
+         title: 'Stories',
+         subtitle: 'Виджет историй в духе мессенджеров и соцсетей',
+         description:
+             'Демо виджета историй в стиле соцсетей: превью с кольцом прогресса, полноэкранный просмотр с автопереключением, навигация по тапам и клавиатуре, двухпальцевый zoom активной истории, режим просмотра зрителей и запоминание просмотренных в localStorage. Настроил ESLint/Prettier, написал README с инструкцией по запуску — код готов к передаче в команду.',
+         stack: ['Next.js', 'TypeScript', 'styled-components', 'Framer Motion', 'ESLint', 'Prettier'],
+         kind: 'pet',
+         githubUrl: 'https://github.com/rmxway/stories',
+         demoUrl: 'https://stories-widget.vercel.app/',
+         accent: 'violet',
+         previewImage: './img/stories.jpg',
+     },  */
     {
         id: 'react-notes',
         title: 'React Notes',
@@ -72,17 +83,6 @@ export const projects: Project[] = [
         demoUrl: 'https://sokolinayaohota.vercel.app/',
         accent: 'amber',
         previewImage: './img/sokol.jpg',
-    },
-    {
-        id: 'askona',
-        title: 'Askona',
-        subtitle: 'Аскона Тех — разработка и поддержка сайта',
-        description: 'Каталог, фильтры, карточка товара, подборщики, UI Kit, менторинг фронтенда, Agile/Scrum и ускорение загрузки страниц.',
-        stack: ['React', 'TypeScript', 'UI Kit', 'Адаптивная вёрстка'],
-        kind: 'commercial',
-        demoUrl: 'https://www.askona.ru/',
-        accent: 'cyan',
-        previewImage: './img/askona.jpg',
     },
     {
         id: 'zoloto585',

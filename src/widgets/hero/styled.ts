@@ -39,7 +39,7 @@ export const HeroGrid = styled.div`
         gap: ${theme.space[5]};
 
         ${media.greaterThan('lg')`
-            grid-template-columns: minmax(0, 1fr) auto;
+            grid-template-columns: 1fr 300px ;
             gap: ${theme.space[6]};
         `}
     `}
@@ -60,12 +60,35 @@ export const HeroText = styled.div`
     `}
 `;
 
+export const List = styled.ul`
+    ${({ theme }) => css`
+        font-size: 1rem;
+        font-weight: 600;
+        color: ${theme.colors.gray700};
+        margin: 0;
+        list-style-type: circle;
+        padding: 10px 0;
+
+        li {
+            display: inline-block;
+            background-color: ${theme.colors.gray700}22;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            padding: 8px 12px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    `}
+`;
+
 export const HeroPhotoWrap = styled(motion.div)`
     ${({ theme }) => css`
         order: -1;
         justify-self: center;
-        width: min(52vw, 220px);
-        height: min(52vw, 220px);
+        width: min(62vw, 220px);
+        height: min(62vw, 220px);
         border-radius: ${theme.radii.full};
         overflow: hidden;
         border: 1px solid ${theme.colors.glassBorder};
@@ -74,8 +97,8 @@ export const HeroPhotoWrap = styled(motion.div)`
         ${media.greaterThan('lg')`
             order: 0;
             justify-self: end;
-            width: min(30vw, 250px);
-            height: min(30vw, 250px);
+            width: min(30vw, 300px);
+            height: min(30vw, 300px);
         `}
     `}
 `;

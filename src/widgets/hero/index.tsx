@@ -6,7 +6,7 @@ import { FaIcon } from '@/shared/ui/fa-icon';
 import { GradientBackground } from '@/shared/ui/gradient-background';
 import { Eyebrow, Heading1, Lead } from '@/shared/ui/text';
 import { staggerContainer, staggerItem } from '@/shared/lib/animations';
-import { HeroActions, HeroText, HeroGrid, HeroInner, HeroPhoto, HeroPhotoWrap, HeroRoot, HeroSurface } from './styled';
+import { HeroActions, HeroText, HeroGrid, HeroInner, HeroPhoto, HeroPhotoWrap, HeroRoot, HeroSurface, List } from './styled';
 
 export function HeroSection() {
     return (
@@ -18,17 +18,22 @@ export function HeroSection() {
                         <HeroGrid>
                             <HeroText>
                                 <motion.div variants={staggerItem}>
-                                    <Eyebrow>Frontend-разработчик</Eyebrow>
+                                    <Eyebrow>Frontend-разработчик (React / TypeScript)</Eyebrow>
                                 </motion.div>
                                 <motion.div variants={staggerItem}>
                                     <Heading1>Довгань Евгений</Heading1>
                                 </motion.div>
                                 <motion.div variants={staggerItem}>
                                     <Lead>
-                                        Коммерческий опыт 5 лет. Во время перерыва (2023–2026) активно поддерживал навыки через временные проекты и учебу на пет-проектах: React / TypeScript, Next.js, архитектура FSD, тесты
-                                        (Jest), Storybook, обработка edge-кейсов.
+                                        Основные направления работы:
+                                        <List>
+                                            <li>Разработка современных веб-приложений</li>
+                                            <li>React, Next.js, Vue, REST API, GraphQL, Redux Toolkit, TanStack и т.д.</li>
+                                            <li>Оптимизация производительности</li>
+                                            <li>Интеграция AI для повышения эффективности</li>
+                                            <li>Работа в Figma (создание нового макета или работа в существующем)</li>
+                                        </List>
                                     </Lead>
-                                    <Lead>В октябре 2026 закончил курс по Frontend-разработке и Web-дизайну в РЭУ им. Г.В. Плеханова. В результате защитил итоговый проект и получил диплом о профессиональной переподготовке.</Lead>
                                     <Lead>
                                         Готов к задачам любого уровня: новые проекты, поддержка, доработка, рефакторинг, покрытие тестами. Быстро вникаю в чужой код и соблюдаю code style. Использую AI
                                         в разработке как инструмент, а не замену.
@@ -48,7 +53,7 @@ export function HeroSection() {
                                 </motion.div>
                             </HeroText>
                             <HeroPhotoWrap variants={staggerItem}>
-                                <HeroPhoto src="./img/resume2.jpg" alt="Довгань Евгений" />
+                                <HeroPhoto src="./img/photo.jpg" alt="Довгань Евгений" />
                             </HeroPhotoWrap>
                         </HeroGrid>
                     </HeroInner>

@@ -53,9 +53,9 @@ export const ContactCardsGrid = styled.ul`
         gap: ${theme.space[3]};
         grid-template-columns: 1fr;
 
-        @media (min-width: 480px) {
+        ${media.greaterThan('sm')`
             grid-template-columns: repeat(2, minmax(50px, 1fr));
-        }
+        `}
     `}
 `;
 
@@ -150,10 +150,12 @@ export const LinkRow = styled.div`
         gap: ${theme.space[2]};
         align-items: center;
         justify-content: center;
+        flex-direction: column;
 
-        ${media.greaterThan('lg')`
-        gap: ${theme.space[2]} ${theme.space[4]};
-            `}
+        ${media.greaterThan('sm')`
+            flex-direction: row;
+            gap: ${theme.space[2]} ${theme.space[4]};
+        `}
     `}
 `;
 
