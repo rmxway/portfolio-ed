@@ -41,7 +41,7 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
     white-space: nowrap;
     border: 0;
   }
-`,b=m(y),fe={...ue,breakpoints:{...y}},x=r();function pe({children:e}){return(0,x.jsxs)(oe,{theme:fe,children:[(0,x.jsx)(de,{}),e]})}var me=[{id:`freelance-2025`,period:`Июнь 2025 — Май 2026`,start:{month:5,year:2025},end:{month:4,year:2026},company:`Фриланс`,role:`Frontend-разработчик`,location:`Москва`,description:`Pet-проекты, тестовые задания и развитие существующих приложений с упором на современный стек и AI-инструменты.`,highlights:[`Stories, Simple Trading, Green Shop, React Notes, ITGuru Test, Соколиная охота`,`Автотесты, Storybook, NextAuth, Firebase`,`Повышение скорости разработки за счёт AI-практик`]},{id:`trust-medanketa`,period:`Март 2023 — Апрель 2025`,start:{month:2,year:2023},end:{month:3,year:2025},company:`Trust System (фриланс)`,role:`Frontend-разработчик`,location:`Москва`,description:`Проект Medanketa и саморазвитие: Next.js, GraphQL, RTK, TanStack Query, деплой.`,highlights:[`Medanketa: анкеты, статистика, шаблоны, справочники, API`,`Оптимизация производительности и рефакторинг`,`Пет-проекты и тестовые задания для роста стека`]},{id:`askona`,period:`Ноябрь 2020 — Август 2022`,start:{month:10,year:2020},end:{month:7,year:2022},company:`Аскона Тех`,role:`Frontend-разработчик`,location:`Москва`,description:`Развитие интернет-магазина: каталог, фильтры, карточки, подборщики, мобильная версия.`,highlights:[`UI Kit и новые страницы на React + TypeScript`,`Менторинг коллег, code review, Agile/Scrum`,`Ускорение загрузки и рефакторинг legacy`]},{id:`585-junior`,period:`Ноябрь 2019 — Апрель 2020`,start:{month:10,year:2017},end:{month:3,year:2020},company:`585, Холдинг`,role:`Младший разработчик`,location:`Москва`,description:`Вёрстка по макетам, переход к современному фронтенду. Поддержка и развитие витрины под руководством senior-разработчика. Большой опыт вёрстки и оптимизации скорости загрузки страницы.`,highlights:[`PSD / Zeplin / Figma → HTML, LESS/SCSS, Pug, Webpack`,`Сокращение времени загрузки страницы с ~7 с до ~1.5 с`,`Формы с валидацией`,`Новые UI-блоки и страницы`,`Оптимизация скорости`]}],S=f.div`
+`,b=m(y),fe={...ue,breakpoints:{...y}},x=r();function pe({children:e}){return(0,x.jsxs)(oe,{theme:fe,children:[(0,x.jsx)(de,{}),e]})}var me=[{id:`freelance`,period:`Март 2023 — мая 2026`,start:{month:2,year:2023},end:{month:4,year:2026},company:`Фриланс`,role:`Frontend-разработчик (React / TypeScript)`,location:`Москва`,description:`Next.js, GraphQL, RTK, TanStack Query, деплой. Pet и временные проекты, тестовые задания, развитие существующих приложений с упором на современный стек + AI-инструменты.`,highlights:[`Medanketa: анкеты, статистика, шаблоны, справочники, API`,`Оптимизация производительности и рефакторинг`,`Green Shop, Diving Center, Simple Trading, React Notes, Соколиная охота`]},{id:`askona`,period:`Ноябрь 2020 — Август 2022`,start:{month:10,year:2020},end:{month:7,year:2022},company:`Аскона Тех`,role:`Frontend-разработчик (React)`,location:`Москва`,description:`Развитие интернет-магазина: каталог, фильтры, карточки, подборщики, мобильная версия.`,highlights:[`UI Kit и новые страницы на React + TypeScript`,`Менторинг коллег, code review, Agile/Scrum`,`Ускорение загрузки и рефакторинг legacy`]},{id:`585-junior`,period:`Ноябрь 2019 — Апрель 2020`,start:{month:10,year:2017},end:{month:3,year:2020},company:`585, Холдинг`,role:`Младший разработчик, HTML-верстальщик`,location:`Москва`,description:`Вёрстка по макетам, переход к современному фронтенду. Поддержка и развитие витрины под руководством senior-разработчика. Большой опыт вёрстки и оптимизации скорости загрузки страницы.`,highlights:[`PSD / Zeplin / Figma → HTML, LESS/SCSS, Pug, Webpack`,`Сокращение времени загрузки страницы с ~7 с до ~1.5 с`,`Формы с валидацией`,`Новые UI-блоки и страницы`,`Оптимизация скорости`]}],S=f.div`
     ${({theme:e})=>p`
         width: 100%;
         max-width: 1120px;
@@ -387,9 +387,9 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
         gap: ${e.space[3]};
         grid-template-columns: 1fr;
 
-        @media (min-width: 480px) {
+        ${b.greaterThan(`sm`)`
             grid-template-columns: repeat(2, minmax(50px, 1fr));
-        }
+        `}
     `}
 `,q=f.li`
     ${({theme:e})=>p`
@@ -470,10 +470,12 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
         gap: ${e.space[2]};
         align-items: center;
         justify-content: center;
+        flex-direction: column;
 
-        ${b.greaterThan(`lg`)`
-        gap: ${e.space[2]} ${e.space[4]};
-            `}
+        ${b.greaterThan(`sm`)`
+            flex-direction: row;
+            gap: ${e.space[2]} ${e.space[4]};
+        `}
     `}
 `,Z=f.span`
     ${({theme:e})=>p`
@@ -517,7 +519,7 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
         gap: ${e.space[5]};
 
         ${b.greaterThan(`lg`)`
-            grid-template-columns: minmax(0, 1fr) auto;
+            grid-template-columns: 1fr 300px ;
             gap: ${e.space[6]};
         `}
     `}
@@ -534,12 +536,33 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
             gap: ${e.space[6]};
         `}
     `}
-`,Ue=f(h.div)`
+`,Ue=f.ul`
+    ${({theme:e})=>p`
+        font-size: 1rem;
+        font-weight: 600;
+        color: ${e.colors.gray700};
+        margin: 0;
+        list-style-type: circle;
+        padding: 10px 0;
+
+        li {
+            display: inline-block;
+            background-color: ${e.colors.gray700}22;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            padding: 8px 12px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    `}
+`,We=f(h.div)`
     ${({theme:e})=>p`
         order: -1;
         justify-self: center;
-        width: min(52vw, 220px);
-        height: min(52vw, 220px);
+        width: min(62vw, 220px);
+        height: min(62vw, 220px);
         border-radius: ${e.radii.full};
         overflow: hidden;
         border: 1px solid ${e.colors.glassBorder};
@@ -548,20 +571,20 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
         ${b.greaterThan(`lg`)`
             order: 0;
             justify-self: end;
-            width: min(30vw, 250px);
-            height: min(30vw, 250px);
+            width: min(30vw, 300px);
+            height: min(30vw, 300px);
         `}
     `}
-`,We=f.img`
+`,Ge=f.img`
     width: 100%;
     height: 100%;
     background-position: center;
     pointer-events: none;
-`,Ge=f.div`
+`,Ke=f.div`
     position: relative;
     z-index: 1;
     width: 100%;
-`,Ke=f.div`
+`,qe=f.div`
     ${({theme:e})=>p`
         display: flex;
         flex-wrap: wrap;
@@ -573,7 +596,7 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
             justify-content: flex-start;
         `}
     `}
-`;function qe(){return(0,x.jsxs)(ze,{id:`top`,children:[(0,x.jsx)(je,{accent:`purple`,angle:130}),(0,x.jsx)(Ge,{children:(0,x.jsx)(S,{children:(0,x.jsx)(Be,{variants:A,initial:`hidden`,animate:`visible`,children:(0,x.jsxs)(Ve,{children:[(0,x.jsxs)(He,{children:[(0,x.jsx)(h.div,{variants:j,children:(0,x.jsx)(O,{children:`Frontend-разработчик`})}),(0,x.jsx)(h.div,{variants:j,children:(0,x.jsx)(he,{children:`Довгань Евгений`})}),(0,x.jsxs)(h.div,{variants:j,children:[(0,x.jsx)(E,{children:`Коммерческий опыт 5 лет. Во время перерыва (2023–2026) активно поддерживал навыки через временные проекты и учебу на пет-проектах: React / TypeScript, Next.js, архитектура FSD, тесты (Jest), Storybook, обработка edge-кейсов.`}),(0,x.jsx)(E,{children:`В октябре 2026 закончил курс по Frontend-разработке и Web-дизайну в РЭУ им. Г.В. Плеханова. В результате защитил итоговый проект и получил диплом о профессиональной переподготовке.`}),(0,x.jsx)(E,{children:`Готов к задачам любого уровня: новые проекты, поддержка, доработка, рефакторинг, покрытие тестами. Быстро вникаю в чужой код и соблюдаю code style. Использую AI в разработке как инструмент, а не замену.`})]}),(0,x.jsx)(h.div,{variants:j,children:(0,x.jsxs)(Ke,{children:[(0,x.jsxs)(U,{href:`#projects`,variant:`primary`,children:[(0,x.jsx)(W,{icon:o,pixels:16,"aria-hidden":!0}),`Смотреть проекты`]}),(0,x.jsxs)(U,{href:`#contact`,variant:`secondary`,children:[(0,x.jsx)(W,{icon:re,pixels:16,"aria-hidden":!0}),`Связаться`]})]})})]}),(0,x.jsx)(Ue,{variants:j,children:(0,x.jsx)(We,{src:`./img/resume2.jpg`,alt:`Довгань Евгений`})})]})})})})]})}var Je=f(h.article)`
+`;function Je(){return(0,x.jsxs)(ze,{id:`top`,children:[(0,x.jsx)(je,{accent:`purple`,angle:130}),(0,x.jsx)(Ke,{children:(0,x.jsx)(S,{children:(0,x.jsx)(Be,{variants:A,initial:`hidden`,animate:`visible`,children:(0,x.jsxs)(Ve,{children:[(0,x.jsxs)(He,{children:[(0,x.jsx)(h.div,{variants:j,children:(0,x.jsx)(O,{children:`Frontend-разработчик (React / TypeScript)`})}),(0,x.jsx)(h.div,{variants:j,children:(0,x.jsx)(he,{children:`Довгань Евгений`})}),(0,x.jsxs)(h.div,{variants:j,children:[(0,x.jsxs)(E,{children:[`Основные направления работы:`,(0,x.jsxs)(Ue,{children:[(0,x.jsx)(`li`,{children:`Разработка современных веб-приложений`}),(0,x.jsx)(`li`,{children:`React, Next.js, Vue, REST API, GraphQL, Redux Toolkit, TanStack и т.д.`}),(0,x.jsx)(`li`,{children:`Оптимизация производительности`}),(0,x.jsx)(`li`,{children:`Интеграция AI для повышения эффективности`}),(0,x.jsx)(`li`,{children:`Работа в Figma (создание нового макета или работа в существующем)`})]})]}),(0,x.jsx)(E,{children:`Готов к задачам любого уровня: новые проекты, поддержка, доработка, рефакторинг, покрытие тестами. Быстро вникаю в чужой код и соблюдаю code style. Использую AI в разработке как инструмент, а не замену.`})]}),(0,x.jsx)(h.div,{variants:j,children:(0,x.jsxs)(qe,{children:[(0,x.jsxs)(U,{href:`#projects`,variant:`primary`,children:[(0,x.jsx)(W,{icon:o,pixels:16,"aria-hidden":!0}),`Смотреть проекты`]}),(0,x.jsxs)(U,{href:`#contact`,variant:`secondary`,children:[(0,x.jsx)(W,{icon:re,pixels:16,"aria-hidden":!0}),`Связаться`]})]})})]}),(0,x.jsx)(We,{variants:j,children:(0,x.jsx)(Ge,{src:`./img/photo.jpg`,alt:`Довгань Евгений`})})]})})})})]})}var Ye=f(h.article)`
     ${({theme:e,$reversed:t})=>p`
         position: relative;
         display: grid;
@@ -611,7 +634,7 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
             max-width: none;
         }
     `}
-`,Ye=f.ul`
+`,Xe=f.ul`
     ${({theme:e})=>p`
         display: flex;
         flex-wrap: wrap;
@@ -620,7 +643,7 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
         margin: 0;
         padding: 0;
     `}
-`,Xe=f.li`
+`,Ze=f.li`
     ${({theme:e})=>p`
         padding: ${e.space[1]} ${e.space[3]};
         font-size: 0.8125rem;
@@ -629,14 +652,14 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
         border-radius: ${e.radii.full};
         border: 1px solid ${e.colors.gray400};
     `}
-`,Ze=f.div`
+`,Qe=f.div`
     ${({theme:e})=>p`
         display: flex;
         flex-wrap: wrap;
         gap: ${e.space[2]};
         margin-top: ${e.space[2]};
     `}
-`,Qe=f.span`
+`,$e=f.span`
     ${({theme:e})=>p`
         font-size: 0.75rem;
         font-weight: 600;
@@ -644,7 +667,7 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
         text-transform: uppercase;
         color: ${e.colors.textMuted};
     `}
-`,$e=f(h.a)`
+`,et=f(h.a)`
     ${({theme:e,$accent:t})=>p`
         position: relative;
         width: 100%;
@@ -668,7 +691,7 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
             pointer-events: none;
         }
     `}
-`,et=f.img`
+`,tt=f.img`
     ${({theme:e})=>p`
         position: absolute;
         width: calc(100% - 20px);
@@ -686,19 +709,19 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
         user-select: none;
         pointer-events: none;
     `}
-`;function tt({accent:e=`amber`,demoUrl:t,imageSrc:n,className:r}){let i=B[e];return(0,x.jsx)($e,{href:t??``,target:`_blank`,rel:`noopener noreferrer`,className:r,$accent:i,initial:`hidden`,whileInView:`visible`,viewport:{once:!0,margin:`-60px`},variants:M,"aria-hidden":!0,children:n?(0,x.jsx)(et,{src:n,alt:``}):null})}var nt=function(e=``){let[t,n]=(0,_.useState)(),[r,i]=(0,_.useState)(``),[a,o]=(0,_.useState)(!1);return(0,_.useEffect)(()=>{let t=new AbortController;return(async()=>{o(!0);try{if(e==``)return;let r=await fetch(e,{signal:t.signal});if(r.ok){let e=await r.json();if(typeof e==`object`)n(e);else throw Error(`Error: Ошибка в типе данных`)}else throw Error(`Error: Ошибка сервера`)}catch(e){i(e.message)}finally{o(!1)}})(),()=>{t.abort()}},[e]),{data:t,error:r,loading:a}};function rt(e){if(e===`pet`)return`Pet-проект`;if(e===`freelance`)return`Фриланс / продукт`;if(e===`test`)return`Тестовое задание`;if(e===`commercial`)return`Коммерческий проект`}var it=({project:e,headingId:t,reversed:n=!1,updateProject:r})=>{let{data:i,loading:a,error:o}=nt(e.title?``:Ce(e.id));return(0,_.useEffect)(()=>{!a&&i&&r(i),!a&&o&&r(e.id)},[a,e.id,o]),(0,x.jsxs)(Je,{$reversed:n,variants:A,initial:`hidden`,whileInView:`visible`,viewport:{once:!0,margin:`-120px`},children:[o&&(0,x.jsx)(`p`,{children:o}),a?(0,x.jsx)(`p`,{children:`Loading...`}):e.title?(0,x.jsxs)(x.Fragment,{children:[(0,x.jsxs)(Q,{variants:j,children:[(0,x.jsx)(Qe,{children:rt(e.kind||`commercial`)}),(0,x.jsx)(w,{id:t,children:e.title}),(0,x.jsx)(T,{as:`p`,children:e.subtitle}),(0,x.jsx)(E,{children:e.description}),(0,x.jsx)(`span`,{children:e.info}),(0,x.jsx)(Ye,{children:e.stack?.map(e=>(0,x.jsx)(Xe,{children:e},e))}),(0,x.jsxs)(Ze,{children:[e.demoUrl?(0,x.jsxs)(U,{href:e.demoUrl,target:`_blank`,rel:`noopener noreferrer`,children:[(0,x.jsx)(W,{icon:ee,pixels:18,"aria-hidden":!0}),`Посмотреть`]}):null,e.githubUrl?(0,x.jsxs)(U,{href:e.githubUrl,target:`_blank`,rel:`noopener noreferrer`,variant:`secondary`,children:[(0,x.jsx)(W,{icon:ce.faGithub,pixels:18,"aria-hidden":!0}),`GitHub`]}):null]})]}),(0,x.jsx)(Q,{variants:j,children:(0,x.jsx)(tt,{accent:e.accent,title:e.title,imageSrc:e.previewImage,demoUrl:e.demoUrl})})]}):(0,x.jsx)(`p`,{children:`Данные не найдены`})]},e.title)},at=f.div`
+`;function nt({accent:e=`amber`,demoUrl:t,imageSrc:n,className:r}){let i=B[e];return(0,x.jsx)(et,{href:t??``,target:`_blank`,rel:`noopener noreferrer`,className:r,$accent:i,initial:`hidden`,whileInView:`visible`,viewport:{once:!0,margin:`-60px`},variants:M,"aria-hidden":!0,children:n?(0,x.jsx)(tt,{src:n,alt:``}):null})}var rt=function(e=``){let[t,n]=(0,_.useState)(),[r,i]=(0,_.useState)(``),[a,o]=(0,_.useState)(!1);return(0,_.useEffect)(()=>{let t=new AbortController;return(async()=>{o(!0);try{if(e==``)return;let r=await fetch(e,{signal:t.signal});if(r.ok){let e=await r.json();if(typeof e==`object`)n(e);else throw Error(`Error: Ошибка в типе данных`)}else throw Error(`Error: Ошибка сервера`)}catch(e){i(e.message)}finally{o(!1)}})(),()=>{t.abort()}},[e]),{data:t,error:r,loading:a}};function it(e){if(e===`pet`)return`Pet-проект`;if(e===`freelance`)return`Фриланс / продукт`;if(e===`test`)return`Тестовое задание`;if(e===`commercial`)return`Коммерческий проект`}var at=({project:e,headingId:t,reversed:n=!1,updateProject:r})=>{let{data:i,loading:a,error:o}=rt(e.title?``:Ce(e.id));return(0,_.useEffect)(()=>{!a&&i&&r(i),!a&&o&&r(e.id)},[a,e.id,o]),(0,x.jsxs)(Ye,{$reversed:n,variants:A,initial:`hidden`,whileInView:`visible`,viewport:{once:!0,margin:`-120px`},children:[o&&(0,x.jsx)(`p`,{children:o}),a?(0,x.jsx)(`p`,{children:`Loading...`}):e.title?(0,x.jsxs)(x.Fragment,{children:[(0,x.jsxs)(Q,{variants:j,children:[(0,x.jsx)($e,{children:it(e.kind||`commercial`)}),(0,x.jsx)(w,{id:t,children:e.title}),(0,x.jsx)(T,{as:`p`,children:e.subtitle}),(0,x.jsx)(E,{children:e.description}),(0,x.jsx)(`span`,{children:e.info}),(0,x.jsx)(Xe,{children:e.stack?.map(e=>(0,x.jsx)(Ze,{children:e},e))}),(0,x.jsxs)(Qe,{children:[e.demoUrl?(0,x.jsxs)(U,{href:e.demoUrl,target:`_blank`,rel:`noopener noreferrer`,children:[(0,x.jsx)(W,{icon:ee,pixels:18,"aria-hidden":!0}),`Посмотреть`]}):null,e.githubUrl?(0,x.jsxs)(U,{href:e.githubUrl,target:`_blank`,rel:`noopener noreferrer`,variant:`secondary`,children:[(0,x.jsx)(W,{icon:ce.faGithub,pixels:18,"aria-hidden":!0}),`GitHub`]}):null]})]}),(0,x.jsx)(Q,{variants:j,children:(0,x.jsx)(nt,{accent:e.accent,title:e.title,imageSrc:e.previewImage,demoUrl:e.demoUrl})})]}):(0,x.jsx)(`p`,{children:`Данные не найдены`})]},e.title)},ot=f.div`
     ${({theme:e})=>p`
         background: ${e.colors.backgroundSecondary};
         border-top: 1px solid ${e.colors.glassBorder};
         border-bottom: 1px solid ${e.colors.glassBorder};
     `}
-`,ot=f.div`
+`,st=f.div`
     ${({theme:e})=>p`
         padding: ${e.space[6]} 0;
         text-align: center;
         background-color: ${e.colors.background};
     `}
-`,st=f.div`
+`,ct=f.div`
     ${({theme:e,$img:t})=>p`
         position: relative;
         min-height: 100svh;
@@ -728,7 +751,7 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
             min-height: auto;
         `}
     `}
-`,ct=[{id:`diving-center`},{id:`green-shop`},{id:`medanketa`,title:`Medanketa`,subtitle:`Медицинские анкеты и аналитика`,description:`Список и прохождение анкет, статистика, шаблоны и справочники. Интеграция API, оптимизация загрузки и рефакторинг.`,stack:[`React`,`TypeScript`,`Vite`,`TanStack Query`,`styled-components`,`ESLint`,`Prettier`],kind:`commercial`,githubUrl:`https://github.com/rmxway/medanketa`,demoUrl:`https://medanketa.com/`,accent:`purple`,previewImage:`./img/medanketa.jpg`},{id:`stories`,title:`Stories`,subtitle:`Виджет историй в духе мессенджеров и соцсетей`,description:`Демо виджета историй в стиле соцсетей: превью с кольцом прогресса, полноэкранный просмотр с автопереключением, навигация по тапам и клавиатуре, двухпальцевый zoom активной истории, режим просмотра зрителей и запоминание просмотренных в localStorage. Настроил ESLint/Prettier, написал README с инструкцией по запуску — код готов к передаче в команду.`,stack:[`Next.js`,`TypeScript`,`styled-components`,`Framer Motion`,`ESLint`,`Prettier`],kind:`pet`,githubUrl:`https://github.com/rmxway/stories`,demoUrl:`https://stories-widget.vercel.app/`,accent:`violet`,previewImage:`./img/stories.jpg`},{id:`simpletrading`},{id:`react-notes`,title:`React Notes`,subtitle:`Заметки и задачи на FSD`,description:`CRUD заметок, фильтры, сортировка, оптимистичные обновления React Query, NextAuth и Firestore. FSD-архитектура для масштабирования.`,stack:[`Next.js 14`,`TypeScript`,`FSD`,`styled-components`,`Redux Toolkit`,`TanStack Query`,`NextAuth`,`Vitest`,`Framer Motion`,`ESLint`,`Prettier`],kind:`pet`,githubUrl:`https://github.com/rmxway/react-notes`,demoUrl:`https://react-notes-service.vercel.app`,accent:`indigo`,previewImage:`./img/notes.jpg`},{id:`itguru-test`,title:`Products table`,subtitle:`Тестовое задание от itGuru`,description:`Авторизация DummyJSON, таблица товаров с пагинацией, поиск, сортировка, оптимистичное добавление в кэш React Query. React Hook Form + Yup: валидация форм с обработкой ошибок и состояний загрузки`,info:`login: emilys, password: emilyspass`,stack:[`React 19`,`TypeScript`,`Vite 7`,`TanStack Query`,`axios`,`React Hook Form`,`Yup`],kind:`test`,githubUrl:`https://github.com/rmxway/itguru-test`,demoUrl:`https://rmxway.github.io/itguru-test/`,accent:`sky`,previewImage:`./img/itguru.jpg`},{id:`sokolinayaohota`,title:`Соколиная охота`,subtitle:`Сайт ресторана`,description:`Вариант сайта ресторана на Next.js. Главная страница в виде лендинга, галерея, залы с описанием и бронированием, контакты.`,stack:[`Next.js 16`,`React 19`,`styled-components`,`Framer Motion`,`Storybook`,`Docker`,`Prettier`],kind:`commercial`,githubUrl:`https://github.com/rmxway/sokolinayaohota`,demoUrl:`https://sokolinayaohota.vercel.app/`,accent:`amber`,previewImage:`./img/sokol.jpg`},{id:`askona`,title:`Askona`,subtitle:`Аскона Тех — разработка и поддержка сайта`,description:`Каталог, фильтры, карточка товара, подборщики, UI Kit, менторинг фронтенда, Agile/Scrum и ускорение загрузки страниц.`,stack:[`React`,`TypeScript`,`UI Kit`,`Адаптивная вёрстка`],kind:`commercial`,demoUrl:`https://www.askona.ru/`,accent:`cyan`,previewImage:`./img/askona.jpg`},{id:`zoloto585`,title:`Золото 585`,subtitle:`Холдинг 585 — ювелирный ритейл`,description:`От вёрстки до React: формы с валидацией, каталоги, карточки товаров, рефакторинг и оптимизация скорости загрузки.`,stack:[`React`,`Webpack`,`SCSS`,`Формы и валидация`],kind:`commercial`,demoUrl:`https://zoloto585.ru/`,accent:`yellow`,previewImage:`./img/gold.jpg`}];function lt(){let[e,t]=(0,_.useState)(ct),n=e=>{t(typeof e==`string`?t=>t.filter(t=>t.id!==e):t=>t.map(t=>{let n=`${V(e.id)}/public/${e.previewImage}`||``,r={...e,previewImage:n};return t.id===e.id?r:t}))};return(0,x.jsxs)(at,{id:`projects`,children:[(0,x.jsx)(ot,{children:(0,x.jsx)(S,{children:(0,x.jsxs)(P,{id:`projects-intro`,children:[(0,x.jsx)(w,{children:(0,x.jsxs)(C,{as:`span`,$inline:!0,$alignItems:`center`,$gap:2,children:[(0,x.jsx)(W,{icon:te,pixels:18,"aria-hidden":!0}),`Проекты`]})}),(0,x.jsxs)(E,{children:[`От свежих pet-проектов и продуктовой разработки до крупного `,(0,x.jsx)(`span`,{children:`e-commerce`}),`.`]})]})})}),e.map(e=>(0,x.jsx)(st,{"aria-labelledby":`project-${e.id}-title`,$img:e.previewImage,children:(0,x.jsx)(S,{children:(0,x.jsx)(it,{headingId:`project-${e.id}-title`,project:e,updateProject:n})})},e.id))]})}var ut=[{id:`core`,title:`Основной стек`,items:[`React`,`Next.js`,`TypeScript / JS`,`HTML5`,`CSS3`]},{id:`state`,title:`Состояние и данные`,items:[`Redux Toolkit`,`TanStack Query`,`MobX`,`GraphQL`,`REST API`]},{id:`style`,title:`Стили и UI`,items:[`Figma`,`Адаптивная вёрстка`,`Styled-components`,`SCSS / LESS`,`CSS Modules`,`Tailwind`,`Bootstrap`,`MUI`]},{id:`quality`,title:`Качество и инструменты`,items:[`Git`,`Vite / Webpack`,`ESLint`,`Prettier`,`Storybook`,`Jest`,`React Testing Library`,`Docker`,`CI/CD`]},{id:`process`,title:`Процессы`,items:[`Jira`,`Agile/Scrum`,`Code Review`,`Postman`,`AI-ассистенты`]}],dt=f.span`
+`,lt=[{id:`medanketa`,title:`Medanketa`,subtitle:`Медицинские анкеты и аналитика`,description:`Список и прохождение анкет, статистика, шаблоны и справочники. Интеграция API, оптимизация загрузки и рефакторинг.`,stack:[`React`,`TypeScript`,`Vite`,`TanStack Query`,`styled-components`,`ESLint`,`Prettier`],kind:`commercial`,githubUrl:`https://github.com/rmxway/medanketa`,demoUrl:`https://medanketa.com/`,accent:`purple`,previewImage:`./img/medanketa.jpg`},{id:`green-shop`},{id:`askona`,title:`Askona`,subtitle:`Аскона Тех — разработка и поддержка сайта`,description:`Каталог, фильтры, карточка товара, подборщики, UI Kit, менторинг фронтенда, Agile/Scrum и ускорение загрузки страниц.`,stack:[`React`,`TypeScript`,`UI Kit`,`Адаптивная вёрстка`],kind:`commercial`,demoUrl:`https://www.askona.ru/`,accent:`cyan`,previewImage:`./img/askona.jpg`},{id:`diving-center`},{id:`simpletrading`},{id:`react-notes`,title:`React Notes`,subtitle:`Заметки и задачи на FSD`,description:`CRUD заметок, фильтры, сортировка, оптимистичные обновления React Query, NextAuth и Firestore. FSD-архитектура для масштабирования.`,stack:[`Next.js 14`,`TypeScript`,`FSD`,`styled-components`,`Redux Toolkit`,`TanStack Query`,`NextAuth`,`Vitest`,`Framer Motion`,`ESLint`,`Prettier`],kind:`pet`,githubUrl:`https://github.com/rmxway/react-notes`,demoUrl:`https://react-notes-service.vercel.app`,accent:`indigo`,previewImage:`./img/notes.jpg`},{id:`itguru-test`,title:`Products table`,subtitle:`Тестовое задание от itGuru`,description:`Авторизация DummyJSON, таблица товаров с пагинацией, поиск, сортировка, оптимистичное добавление в кэш React Query. React Hook Form + Yup: валидация форм с обработкой ошибок и состояний загрузки`,info:`login: emilys, password: emilyspass`,stack:[`React 19`,`TypeScript`,`Vite 7`,`TanStack Query`,`axios`,`React Hook Form`,`Yup`],kind:`test`,githubUrl:`https://github.com/rmxway/itguru-test`,demoUrl:`https://rmxway.github.io/itguru-test/`,accent:`sky`,previewImage:`./img/itguru.jpg`},{id:`sokolinayaohota`,title:`Соколиная охота`,subtitle:`Сайт ресторана`,description:`Вариант сайта ресторана на Next.js. Главная страница в виде лендинга, галерея, залы с описанием и бронированием, контакты.`,stack:[`Next.js 16`,`React 19`,`styled-components`,`Framer Motion`,`Storybook`,`Docker`,`Prettier`],kind:`commercial`,githubUrl:`https://github.com/rmxway/sokolinayaohota`,demoUrl:`https://sokolinayaohota.vercel.app/`,accent:`amber`,previewImage:`./img/sokol.jpg`},{id:`zoloto585`,title:`Золото 585`,subtitle:`Холдинг 585 — ювелирный ритейл`,description:`От вёрстки до React: формы с валидацией, каталоги, карточки товаров, рефакторинг и оптимизация скорости загрузки.`,stack:[`React`,`Webpack`,`SCSS`,`Формы и валидация`],kind:`commercial`,demoUrl:`https://zoloto585.ru/`,accent:`yellow`,previewImage:`./img/gold.jpg`}];function ut(){let[e,t]=(0,_.useState)(lt),n=e=>{t(typeof e==`string`?t=>t.filter(t=>t.id!==e):t=>t.map(t=>{let n=`${V(e.id)}/public/${e.previewImage}`||``,r={...e,previewImage:n};return t.id===e.id?r:t}))};return(0,x.jsxs)(ot,{id:`projects`,children:[(0,x.jsx)(st,{children:(0,x.jsx)(S,{children:(0,x.jsxs)(P,{id:`projects-intro`,children:[(0,x.jsx)(w,{children:(0,x.jsxs)(C,{as:`span`,$inline:!0,$alignItems:`center`,$gap:2,children:[(0,x.jsx)(W,{icon:te,pixels:18,"aria-hidden":!0}),`Проекты`]})}),(0,x.jsxs)(E,{children:[`От свежих pet-проектов и продуктовой разработки до крупного `,(0,x.jsx)(`span`,{children:`e-commerce`}),`.`]})]})})}),e.map(e=>(0,x.jsx)(ct,{"aria-labelledby":`project-${e.id}-title`,$img:e.previewImage,children:(0,x.jsx)(S,{children:(0,x.jsx)(at,{headingId:`project-${e.id}-title`,project:e,updateProject:n})})},e.id))]})}var dt=[{id:`core`,title:`Основной стек`,items:[`React`,`Next.js`,`TypeScript / JS`,`HTML5`,`CSS3`]},{id:`state`,title:`Состояние и данные`,items:[`Redux Toolkit`,`TanStack Query`,`MobX`,`GraphQL`,`REST API`]},{id:`style`,title:`Стили и UI`,items:[`Figma`,`Адаптивная вёрстка`,`Styled-components`,`SCSS / LESS`,`CSS Modules`,`Tailwind`,`Bootstrap`,`MUI`]},{id:`quality`,title:`Качество и инструменты`,items:[`Git`,`Vite / Webpack`,`ESLint`,`Prettier`,`Storybook`,`Jest`,`React Testing Library`,`Docker`,`CI/CD`]},{id:`process`,title:`Процессы`,items:[`Jira`,`Agile/Scrum`,`Code Review`,`Postman`,`AI-ассистенты`]}],ft=f.span`
     ${({theme:e})=>p`
         display: inline-flex;
         align-items: center;
@@ -740,7 +763,7 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
         border-radius: ${e.radii.full};
         box-shadow: ${e.shadows.sm};
     `}
-`,ft=f.div`
+`,$=f.div`
     ${({theme:e})=>p`
         display: flex;
         position: relative;
@@ -752,20 +775,20 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
         border: 1px solid ${e.colors.glassBorder};
         box-shadow: ${e.shadows.sm};
     `}
-`,$=f.div`
+`,pt=f.div`
     ${({theme:e})=>p`
         display: flex;
         flex-wrap: wrap;
         gap: ${e.space[2]};
         z-index: 1;
     `}
-`;function pt({label:e}){return(0,x.jsx)(dt,{children:e})}function mt({category:e}){return(0,x.jsxs)(ft,{children:[(0,x.jsx)(T,{as:`h2`,children:e.title}),(0,x.jsx)($,{children:e.items.map(e=>(0,x.jsx)(pt,{label:e},e))})]})}var ht=f.section`
+`;function mt({label:e}){return(0,x.jsx)(ft,{children:e})}function ht({category:e}){return(0,x.jsxs)($,{children:[(0,x.jsx)(T,{as:`h2`,children:e.title}),(0,x.jsx)(pt,{children:e.items.map(e=>(0,x.jsx)(mt,{label:e},e))})]})}var gt=f.section`
     ${({theme:e})=>p`
         position: relative;
         padding: ${e.space[6]} 0;
         background: ${e.colors.background};
     `}
-`,gt=f.div`
+`,_t=f.div`
     ${({theme:e})=>p`
         display: grid;
         gap: ${e.space[4]};
@@ -778,16 +801,16 @@ import{a as e}from"./rolldown-runtime-BWaJ3C7D.js";import{n as t}from"./vendor-B
       grid-template-columns: repeat(3, minmax(0, 1fr));
     `}
     `}
-`,_t=f.div`
+`,vt=f.div`
     ${({theme:e})=>p`
         max-width: 40rem;
         margin: 0 auto ${e.space[5]};
         text-align: center;
     `}
-`;function vt(){return(0,x.jsx)(ht,{id:`skills`,children:(0,x.jsx)(S,{children:(0,x.jsxs)(P,{children:[(0,x.jsx)(_t,{children:(0,x.jsx)(w,{children:(0,x.jsx)(C,{as:`span`,$inline:!0,$alignItems:`center`,$gap:2,children:`Навыки`})})}),(0,x.jsx)(gt,{children:ut.map((e,t)=>(0,x.jsx)(mt,{category:e,num:t},e.id))})]})})})}var yt=f.main`
+`;function yt(){return(0,x.jsx)(gt,{id:`skills`,children:(0,x.jsx)(S,{children:(0,x.jsxs)(P,{children:[(0,x.jsx)(vt,{children:(0,x.jsx)(w,{children:(0,x.jsx)(C,{as:`span`,$inline:!0,$alignItems:`center`,$gap:2,children:`Навыки`})})}),(0,x.jsx)(_t,{children:dt.map((e,t)=>(0,x.jsx)(ht,{category:e,num:t},e.id))})]})})})}var bt=f.main`
     ${({theme:e})=>p`
         min-height: 100vh;
         min-height: 100svh;
         background: ${e.colors.background};
     `}
-`;function bt(){return(0,x.jsxs)(yt,{children:[(0,x.jsx)(qe,{}),(0,x.jsx)(lt,{}),(0,x.jsx)(vt,{}),(0,x.jsx)(we,{}),(0,x.jsx)(Re,{})]})}(0,v.createRoot)(document.getElementById(`root`)).render((0,x.jsx)(_.StrictMode,{children:(0,x.jsx)(()=>(0,x.jsx)(pe,{children:(0,x.jsx)(bt,{})}),{})}));
+`;function xt(){return(0,x.jsxs)(bt,{children:[(0,x.jsx)(Je,{}),(0,x.jsx)(ut,{}),(0,x.jsx)(yt,{}),(0,x.jsx)(we,{}),(0,x.jsx)(Re,{})]})}(0,v.createRoot)(document.getElementById(`root`)).render((0,x.jsx)(_.StrictMode,{children:(0,x.jsx)(()=>(0,x.jsx)(pe,{children:(0,x.jsx)(xt,{})}),{})}));
